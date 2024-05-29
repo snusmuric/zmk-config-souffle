@@ -1,7 +1,7 @@
 &i2c0 {
   status = "okay";
-  sda-pin = <17>;
-  scl-pin = <20>; 
+  sda-pin = <5>;
+  scl-pin = <6>; 
 
   oled: ssd1306@3c {
     compatible = "solomon,ssd1306fb";
