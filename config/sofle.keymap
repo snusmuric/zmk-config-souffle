@@ -62,10 +62,10 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans     &trans     &trans       &trans     &trans                      &trans     &trans    &trans    &trans     &trans   &trans
+&trans  &trans     &trans     &trans       &trans     &trans                      &trans     &trans    &trans    &trans     &trans   &kp PRINTSCREEN
 &trans  &kp INS    &kp PSCRN  &kp K_CMENU  &trans     &trans                      &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
 &trans  &kp LALT   &kp LCTRL  &kp LSHFT    &trans     &kp CLCK                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)  &sl 3     &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)  &sl 3     &trans    &trans  &kp HOME   &kp END   &kp INS   &trans     &trans   &trans
                    &trans     &trans       &trans     &trans    &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
