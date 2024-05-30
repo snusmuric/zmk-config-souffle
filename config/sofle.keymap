@@ -23,52 +23,17 @@
 };
 
 / {
-    macros {
-        numdot: numdot {
-            label = "ZM_numdot";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N4 &kp KP_N6>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-        grtsgn: grtsgn {
-            label = "ZM_grtsgn";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N6 &kp KP_N2>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-        
-    };
-};
-
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
 
             bindings = <
-&kp ESC         &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                                  &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp GRAVE
-&mt LWIN RBKT   &kp Q  &kp W    &kp E    &kp R     &kp T                                   &kp Y  &kp U     &kp I     &kp O    &kp P    &mt RWIN LBKT
-&mt LCTRL GRAVE &kp A  &kp S    &kp D    &kp F     &kp G                                   &kp H  &kp J     &kp K     &kp L    &kp SEMI &mt RCTRL SQT
-&mt LALT BSLH   &kp Z  &kp X    &kp C    &kp V     &kp B  &kp LG(SPACE)   &kp CAPS         &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &mt RALT MINUS
-         &kp LGUI   &kp LALT  &lt 2 TAB  &mt LSHFT SPACE  &lt 1 RET   &lt 1 ESC  &mt RSHFT BSPC  &lt 2 DEL  &kp RALT   &kp RGUI
+&kp GRAVE       &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                                      &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp PBKT
+&mt LWIN RBKT   &kp Q  &kp W    &kp E    &kp R     &kp T                                       &kp Y  &kp U     &kp I     &kp O    &kp P    &mt RWIN LBKT
+&mt LCTRL GRAVE &kp A  &kp S    &kp D    &kp F     &kp G                                       &kp H  &kp J     &kp K     &kp L    &kp SEMI &mt RCTRL SQT
+&mt LALT BSLH   &kp Z  &kp X    &kp C    &kp V     &kp B  &mt CAPS &kp ESC    khn&kp MINUS           &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &mt RALT EQUAL
+         &kp LGUI   &kp LALT  &lt 2 TAB  &mt LSHFT SPACE  &lt 1 RET           &lt 1 SPACE  &mt RSHFT BSPC  &lt 2 DEL  &kp RALT   &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -104,7 +69,7 @@
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans    &trans   &trans    &trans  &trans
 &trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
 &trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
-&trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
+&trans     &kp LG(Z)   &kp LG(X)     &kp LG(C)    &kp LG(V)    &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
             >;
 
