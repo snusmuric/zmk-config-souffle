@@ -13,7 +13,7 @@
 #define RSE 2
 #define BSL 3
 
-# &lt { quick_tap_ms = <220>; };
+&lt { quick_tap_ms = <220>; };
 
 &sl { release-after-ms = <5000>; };
 
