@@ -17,11 +17,15 @@
 
 &mt { quick_tap_ms = <220>; };
 
-&sl {
-    release-after-ms = <5000>;
-};
-
 / {
+    behaviors {
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-mouse-scroll";
+            label = "MOUSE_SCROLL";
+            #binding-cells = <1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -66,11 +70,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans     &trans     &trans       &trans     &trans                      &trans     &trans    &trans    &trans     &trans   &kp PRINTSCREEN
-&trans  &kp INS    &kp PSCRN  &kp K_CMENU  &trans     &trans                      &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
-&trans  &kp LALT   &kp LCTRL  &kp LSHFT    &trans     &kp CLCK                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)  &sl 3     &trans    &trans  &kp HOME   &kp END   &kp INS   &trans     &trans   &trans
-                   &trans     &trans       &trans     &trans    &trans    &trans  &trans     &trans    &trans    &trans
+&trans  &trans     &trans     &trans       &trans     &trans                      &mwh SCROLL_LEFT  &trans    &trans        &mwh SCROLL_RIGHT  &trans  &kp PRINTSCREEN
+&trans  &kp INS    &kp PSCRN  &kp K_CMENU  &trans     &trans                      &mwh SCROLL_UP    &kp HOME  &trans        &kp PAGE_UP        &trans  &trans
+&trans  &kp LALT   &kp LCTRL  &kp LSHFT    &trans     &kp CLCK                    &kp LEFT          &kp DOWN  &kp UP_ARROW  &kp RIGHT          &trans  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)  &sl 3     &trans    &trans  &mwh SCROLL_DOWN  &kp END   &kp INS       &kp PAGE_DOWN      &trans  &trans
+                   &trans     &trans       &trans     &trans    &trans    &trans  &trans            &trans    &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
