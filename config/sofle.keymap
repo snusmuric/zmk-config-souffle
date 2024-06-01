@@ -6,7 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define DEF 0
@@ -67,10 +66,10 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans     &trans     &trans       &trans     &trans                      &mwh SCROLL_LEFT  &trans    &trans        &mwh SCROLL_RIGHT  &trans  &kp PRINTSCREEN
-&trans  &kp INS    &kp PSCRN  &kp K_CMENU  &trans     &trans                      &mwh SCROLL_UP    &kp HOME  &trans        &kp PAGE_UP        &trans  &trans
+&trans  &trans     &trans     &trans       &trans     &trans                      &trans  &trans    &trans        &trans  &trans  &kp PRINTSCREEN
+&trans  &kp INS    &kp PSCRN  &kp K_CMENU  &trans     &trans                      &trans    &kp HOME  &trans        &kp PAGE_UP        &trans  &trans
 &trans  &kp LALT   &kp LCTRL  &kp LSHFT    &trans     &kp CLCK                    &kp LEFT          &kp DOWN  &kp UP_ARROW  &kp RIGHT          &trans  &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)  &sl 3     &trans    &trans  &mwh SCROLL_DOWN  &kp END   &kp INS       &kp PAGE_DOWN      &trans  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)  &sl 3     &trans    &trans  &trans  &kp END   &kp INS       &kp PAGE_DOWN      &trans  &trans
                    &trans     &trans       &trans     &trans    &trans    &trans  &trans            &trans    &trans        &trans
             >;
 
