@@ -65,13 +65,6 @@
         };
 
         raise_layer {
-            // ------------------------------------------------------------------------------------------------------------
-            // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-            // |     | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |       |       |
-            // |     | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-            // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
-            //              |      |       |       |      |      |  |      |      |      |       |      |
-
             bindings = <
 &trans  &kp SCROLLLOCK  &trans     &trans       &trans     &trans                    &trans    &trans    &trans        &trans         &trans  &kp PRINTSCREEN
 &trans  &kp INS         &kp PSCRN  &kp K_CMENU  &none      &none                     &none     &kp HOME  &none         &kp PAGE_UP    &none   &trans
@@ -99,11 +92,11 @@
 
         numpad_layer {
             bindings = <
-&to 0               &kp F1           &kp F2        &kp F3  &kp F4        &kp F5                                     &kp F6     &kp F7       &kp F8           &kp F9      &kp F10      &kp F11
-&ht LGUI CLCK       &kp KP_ASTERISK  &kp N7        &kp N8  &kp N9        &kp PLUS                                   &kp EXCL   &kp AT_SIGN  &kp HASH         &kp DOLLAR  &kp PERCENT  &kp F12
-&trans              &kp SLASH        &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp MINUS                                  &kp CARET  &kp AMPS     &kp KP_MULTIPLY  &kp LPAR    &kp RPAR     &kp A
-&ht LEFT_ALT EQUAL  &kp N0           &kp N1        &kp N2  &kp NUMBER_3  &kp DOT    &ht LC(LS(LALT)) ESC    &trans  &kp LBKT   &kp RBKT     &kp SEMI         &kp COLON   &kp BSLH     &trans
-                                     &trans        &trans  &to 0         &trans     &trans                  &trans  &trans     &trans       &trans           &trans
+&to 0               &kp F1           &kp F2        &kp F3  &kp F4        &kp F5                                     &trans    &trans    &trans        &trans         &trans  &kp PRINTSCREEN
+&ht LGUI CLCK       &kp KP_ASTERISK  &kp N7        &kp N8  &kp N9        &kp PLUS                                   &none     &kp HOME  &none         &kp PAGE_UP    &none   &trans
+&trans              &kp SLASH        &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp MINUS                                  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT      &none   &trans
+&ht LEFT_ALT EQUAL  &kp N0           &kp N1        &kp N2  &kp NUMBER_3  &kp DOT    &ht LC(LS(LALT)) ESC    &trans  &none     &kp END   &kp INS       &kp PAGE_DOWN  &none   &trans
+                                     &trans        &trans  &to 0         &trans     &trans                  &trans  &trans    &trans    &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
