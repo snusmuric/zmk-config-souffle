@@ -17,6 +17,10 @@
 
 &mt { quick_tap_ms = <220>; };
 
+&sl {
+    release-after-ms = <5000>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
