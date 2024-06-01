@@ -18,15 +18,11 @@
 
 &mt { quick_tap_ms = <220>; };
 
-/ {
-    behaviors {
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-mouse-scroll";
-            label = "MOUSE_SCROLL";
-            #binding-cells = <1>;
-        };
-    };
+&sl {
+    release-after-ms = <5000>;
+};
 
+/ {
     keymap {
         compatible = "zmk,keymap";
 
