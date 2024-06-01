@@ -17,9 +17,7 @@
 
 &mt { quick_tap_ms = <220>; };
 
-&sl {
-    release-after-ms = <5000>;
-};
+&sl { release-after-ms = <5000>; };
 
 / {
     keymap {
@@ -66,11 +64,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans     &trans     &trans       &trans     &trans                      &trans  &trans    &trans        &trans  &trans  &kp PRINTSCREEN
-&trans  &kp INS    &kp PSCRN  &kp K_CMENU  &trans     &trans                      &trans    &kp HOME  &trans        &kp PAGE_UP        &trans  &trans
-&trans  &kp LALT   &kp LCTRL  &kp LSHFT    &trans     &kp CLCK                    &kp LEFT          &kp DOWN  &kp UP_ARROW  &kp RIGHT          &trans  &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)  &sl 3     &trans    &trans  &trans  &kp END   &kp INS       &kp PAGE_DOWN      &trans  &trans
-                   &trans     &trans       &trans     &trans    &trans    &trans  &trans            &trans    &trans        &trans
+&trans  &trans     &trans     &trans       &trans     &trans                      &trans    &trans    &trans        &trans         &trans  &kp PRINTSCREEN
+&trans  &kp INS    &kp PSCRN  &kp K_CMENU  &trans     &trans                      &none     &kp HOME  &none         &kp PAGE_UP    &none   &trans
+&trans  &kp LALT   &kp LCTRL  &kp LSHFT    &trans     &kp CLCK                    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT      &trans  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)    &kp LG(V)  &sl 3     &trans    &trans  &none     &kp END   &kp INS       &kp PAGE_DOWN  &none   &trans
+                   &trans     &trans       &trans     &trans    &trans    &trans  &trans    &trans    &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
