@@ -42,11 +42,11 @@
 
         default_layer {
             bindings = <
-&kp GRAVE        &kp N1  &kp N2            &kp N3    &kp N4                 &kp N5                                                                 &kp N6          &kp N7              &kp N8     &kp N9             &kp N0    &kp RBKT
-&ht LWIN ESC     &kp Q   &kp W             &kp E     &kp R                  &kp T                                                                  &kp Y           &kp U               &kp I      &kp O              &kp P     &ht RWIN LBKT
-&ht LCTRL GRAVE  &kp A   &kp S             &kp D     &kp F                  &kp G                                                                  &kp H           &kp J               &kp K      &kp L              &kp SEMI  &ht RCTRL SQT
-&ht LALT BSLH    &kp Z   &kp X             &kp C     &kp V                  &kp B            &ht LC(LS(LALT)) LG(SPACE)    &ht LC(LS(LALT)) MINUS  &kp N           &kp M               &kp COMMA  &kp DOT            &kp FSLH  &ht RALT EQUAL
-                         &kp LEFT_COMMAND  &kp LALT  &lt NAVIGATION ESCAPE  &ht LSHFT SPACE  &lt SYMBOL TAB                &lt SYMBOL RET          &ht RSHFT BSPC  &lt NAVIGATION DEL  &lt NUMPAD &kp RALT   &kp RIGHT_COMMAND
+&kp GRAVE        &kp N1  &kp N2            &kp N3    &kp N4                 &kp N5                                                                 &kp N6          &kp N7              &kp N8                &kp N9    &kp N0    &kp RBKT
+&ht LWIN ESC     &kp Q   &kp W             &kp E     &kp R                  &kp T                                                                  &kp Y           &kp U               &kp I                 &kp O     &kp P     &ht RWIN LBKT
+&ht LCTRL GRAVE  &kp A   &kp S             &kp D     &kp F                  &kp G                                                                  &kp H           &kp J               &kp K                 &kp L     &kp SEMI  &ht RCTRL SQT
+&ht LALT BSLH    &kp Z   &kp X             &kp C     &kp V                  &kp B            &ht LC(LS(LALT)) LG(SPACE)    &ht LC(LS(LALT)) MINUS  &kp N           &kp M               &kp COMMA             &kp DOT   &kp FSLH  &ht RALT EQUAL
+                         &kp LEFT_COMMAND  &kp LALT  &lt NAVIGATION ESCAPE  &ht LSHFT SPACE  &lt SYMBOL TAB                &lt SYMBOL RET          &ht RSHFT BSPC  &lt NAVIGATION DEL  &lt NUMPAD RIGHT_ALT  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
