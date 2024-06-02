@@ -4,6 +4,9 @@
  * SPDX-License-Identifier: MIT
  */
 
+// Useful web keymap editor
+// https://nickcoutsos.github.io/keymap-editor/
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -123,6 +126,11 @@
             bindings = <&kp F12>;
             key-positions = <23 35>;
         };
+
+        combo_lock_symbol_layer {
+            bindings = <&tog NAVIGATION>;
+            key-positions = <59 57>;
+        };
     };
 
     keymap {
@@ -146,7 +154,7 @@
 &trans              &kp SQT          &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp DOT                      &kp AMPS   &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &kp F12
 &trans              &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH                     &kp PIPE   &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
 &ht LEFT_ALT EQUAL  &kp CARET        &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &trans
-                                     &trans         &trans            &trans             &trans     &trans    &trans  &trans     &trans         &trans                &trans
+                                     &trans         &trans            &to DEFAULT        &trans     &trans    &trans  &trans     &trans         &trans                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
