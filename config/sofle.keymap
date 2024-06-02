@@ -60,7 +60,7 @@
         };
 
         combo_bluetooth {
-            bindings = <&to 3>;
+            bindings = <&to BLUETOOTH>;
             key-positions = <41 17>;
         };
     };
