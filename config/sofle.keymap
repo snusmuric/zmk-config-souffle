@@ -46,7 +46,7 @@
         };
 
         combo_cut {
-            bindings = <&kp LG(Z)>;
+            bindings = <&kp LG(X)>;
             key-positions = <38 26>;
         };
 
