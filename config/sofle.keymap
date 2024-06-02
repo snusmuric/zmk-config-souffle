@@ -54,11 +54,11 @@
 
         symbol_layer {
             bindings = <
-&trans              &kp F1           &kp F2        &kp F3  &kp F4        &kp F5                                     &kp F6     &kp F7       &kp F8           &kp F9      &kp F10      &kp F11
-&trans              &kp KP_ASTERISK  &kp N7        &kp N8  &kp N9        &kp PLUS                                   &kp EXCL   &kp AT_SIGN  &kp HASH         &kp DOLLAR  &kp PERCENT  &kp F12
-&trans              &kp SLASH        &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp MINUS                                  &kp CARET  &kp AMPS     &kp KP_MULTIPLY  &kp LPAR    &kp RPAR     &kp A
-&ht LEFT_ALT EQUAL  &kp N0           &kp N1        &kp N2  &kp NUMBER_3  &kp DOT    &ht LC(LS(LALT)) ESC    &trans  &kp LBKT   &kp RBKT     &kp SEMI         &kp COLON   &kp BSLH     &trans
-                                     &trans        &trans  &trans        &trans     &trans                  &trans  &trans     &trans       &trans           &trans
+&trans              &kp F1           &kp F2         &kp F3            &kp F4             &kp F5                       &kp F6     &kp F7         &kp F8                &kp F9                 &kp F10       &kp F11
+&trans              &kp SQT          &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp DOT                      &kp AMPS   &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &kp F12
+&trans              &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH                     &kp PIPE   &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
+&ht LEFT_ALT EQUAL  &kp CARET        &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &trans
+                                     &trans         &trans            &trans             &trans     &trans    &trans  &trans     &trans         &trans                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
