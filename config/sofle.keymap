@@ -3,7 +3,6 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
 // Useful web keymap editor
 // https://nickcoutsos.github.io/keymap-editor/
 
@@ -129,7 +128,7 @@
 
         combo_lock_symbol_layer {
             bindings = <&tog NAVIGATION>;
-            key-positions = <59 57>;
+            key-positions = <59 58>;
         };
     };
 
