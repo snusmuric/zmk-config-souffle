@@ -130,6 +130,11 @@
             bindings = <&tog NAVIGATION>;
             key-positions = <59 58>;
         };
+
+        combo_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 12>;
+        };
     };
 
     keymap {
