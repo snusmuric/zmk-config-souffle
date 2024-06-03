@@ -161,10 +161,10 @@
 
         navigation_layer {
             bindings = <
-&to DEFAULT         &kp F1           &kp F2        &kp F3  &kp F4        &kp F5                                     &trans    &trans    &trans        &trans         &trans   &kp PRINTSCREEN
-&trans              &kp KP_ASTERISK  &kp N7        &kp N8  &kp N9        &kp PLUS                                   &none     &kp HOME  &none         &kp PAGE_UP    &kp INS  &trans
-&trans              &kp SLASH        &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp MINUS                                  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT      &none    &trans
-&ht LEFT_ALT EQUAL  &kp N0           &kp N1        &kp N2  &kp NUMBER_3  &kp DOT    &ht LC(LS(LALT)) ESC    &trans  &none     &kp END   &none         &kp PAGE_DOWN  &none    &trans
+&to DEFAULT         &kp F1           &kp F2        &kp F3  &kp F4        &kp F5                                     &kp F6    &kp F7    &kp F8        &kp F9         &kp F10          &kp F11
+&trans              &kp KP_ASTERISK  &kp N7        &kp N8  &kp N9        &kp PLUS                                   &none     &kp HOME  &kp INS       &kp PAGE_UP    &kp PRINTSCREEN  &kp F12
+&trans              &kp SLASH        &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp MINUS                                  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT      &none            &trans
+&ht LEFT_ALT EQUAL  &kp N0           &kp N1        &kp N2  &kp NUMBER_3  &kp DOT    &ht LC(LS(LALT)) ESC    &trans  &none     &kp END   &none         &kp PAGE_DOWN  &none            &trans
                                      &trans        &trans  &to DEFAULT   &trans     &trans                  &trans  &trans    &trans    &trans        &trans
             >;
 
