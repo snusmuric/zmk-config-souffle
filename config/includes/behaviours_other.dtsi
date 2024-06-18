@@ -1,11 +1,12 @@
 #define TD_TAPPING_TERM 300
 
+/*
 &lt {
     quick_tap_ms = <TD_TAPPING_TERM>;
     tapping-term-ms = <TD_TAPPING_TERM>;
     quick-tap-ms = <TD_TAPPING_TERM>;
     flavor = "tap-preferred";
-};
+}; */
 
 &sl { release-after-ms = <5000>; };
 
