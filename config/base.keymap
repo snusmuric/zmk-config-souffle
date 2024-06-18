@@ -49,6 +49,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "Base";
             bindings = <
 &ht LGUI TAB           &kp N1  &kp N2    &kp N3        &kp N4                 &kp N5                                                                               &kp N6          &kp N7                &kp N8         &kp N9         &kp N0            &ht RGUI EQUAL
 &ht LSHFT GRAVE        &kp Q   &kp W     &kp E         &kp R                  &kp T                                                                                &kp Y           &kp U                 &kp I          &kp O          &kp P             &ht RSHFT LBKT
@@ -61,6 +62,7 @@
         };
 
         symbol_layer {
+            display-name = "Sym";
             bindings = <
 &trans              &kp F1           &kp F2         &kp F3            &kp F4             &kp F5                       &kp F6     &kp F7         &kp F8                &kp F9                 &kp F10       &kp F11
 &trans              &kp SQT          &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp DOT                      &kp AMPS   &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &kp F12
@@ -73,6 +75,7 @@
         };
 
         navigation_layer {
+            display-name = "Nav";
             bindings = <
 &to DEFAULT         &kp F1           &kp F2        &kp F3  &kp F4        &kp F5                                     &kp F6    &kp F7         &kp F8        &kp F9     &kp F10          &kp F11
 &trans              &kp KP_ASTERISK  &kp N7        &kp N8  &kp N9        &kp PLUS                                   &kp INS   &none          &none         &none      &kp PRINTSCREEN  &kp F12
@@ -85,6 +88,7 @@
         };
 
         bluetooth_layer {
+            display-name = "Blt";
             bindings = <
 &to DEFAULT  &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &bt BT_DISC 0    &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                   &none   &none   &none   &none   &none   &none  
