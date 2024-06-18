@@ -95,5 +95,10 @@
             bindings = <&tog NAVIGATION>;
             key-positions = <59 58>;
         };
+
+        combo_activate_bluetooth_layer {
+            bindings = <&tog NAVIGATION>;
+            key-positions = <LH4 RH4>;
+        };
   };
 };
