@@ -1,5 +1,7 @@
 #define TD_TAPPING_TERM 300
 
+#include <dt-bindings/zmk/outputs.h>
+
 /*
 &lt {
     quick_tap_ms = <TD_TAPPING_TERM>;
