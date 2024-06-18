@@ -51,12 +51,12 @@
          * Tap: Backspace
          * Shift-Tap: Delete
          */
-        mm_bspc_del: bspc_del {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp DEL>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+        // mm_bspc_del: bspc_del {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp BSPC>, <&kp DEL>;
+        //     mods = <(MOD_LSFT|MOD_RSFT)>;
+        // };
 
         /*
          * Shifted Backspace deletes + Layer Tap
@@ -86,13 +86,13 @@
          * RShift-Tap: _
          * Hold: Switch layer
          */
-        mm_spc_unds_layer: mod_morph_underscore {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&lt_l SYM SPACE>, <&kp MINUS>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
+        // mm_spc_unds_layer: mod_morph_underscore {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     #binding-cells = <0>;
+        //     bindings = <&lt_l SYM SPACE>, <&kp MINUS>;
+        //     mods = <(MOD_LSFT|MOD_RSFT)>;
+        //     keep-mods = <(MOD_LSFT)>;
+        // };
 
         /*
          * Shifted grave types caret (^)
