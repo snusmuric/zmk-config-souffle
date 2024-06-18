@@ -1,0 +1,99 @@
+#define COMBO_TERM_FAST 35
+#define COMBO_TERM_SLOW 40
+#define COMBO_PRIOR_IDLE 100
+
+/ {
+  combos {
+    compatible = "zmk,combos";
+
+        combo_undo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <37 25>;
+        };
+
+        combo_cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <38 26>;
+        };
+
+        combo_copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <39 27>;
+        };
+
+        combo_paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <40 28>;
+        };
+
+        combo_bluetooth {
+            bindings = <&to BLUETOOTH>;
+            key-positions = <41 17>;
+        };
+
+        combo_f1 {
+            bindings = <&kp F1>;
+            key-positions = <13 1>;
+        };
+
+        combo_f2 {
+            bindings = <&kp F2>;
+            key-positions = <14 2>;
+        };
+
+        combo_f3 {
+            bindings = <&kp F3>;
+            key-positions = <15 3>;
+        };
+
+        combo_f4 {
+            bindings = <&kp F4>;
+            key-positions = <16 4>;
+        };
+
+        combo_f5 {
+            bindings = <&kp F5>;
+            key-positions = <17 5>;
+        };
+
+        combo_f6 {
+            bindings = <&kp F6>;
+            key-positions = <18 6>;
+        };
+
+        combo_f7 {
+            bindings = <&kp F7>;
+            key-positions = <19 7>;
+        };
+
+        combo_f8 {
+            bindings = <&kp F8>;
+            key-positions = <20 8>;
+        };
+
+        combo_f9 {
+            bindings = <&kp F9>;
+            key-positions = <21 9>;
+        };
+
+        combo_f10 {
+            bindings = <&kp F10>;
+            key-positions = <10 22>;
+        };
+
+        combo_f11 {
+            bindings = <&kp F11>;
+            key-positions = <11 23>;
+        };
+
+        combo_f12 {
+            bindings = <&kp F12>;
+            key-positions = <23 35>;
+        };
+
+        combo_lock_symbol_layer {
+            bindings = <&tog NAVIGATION>;
+            key-positions = <59 58>;
+        };
+  };
+};
