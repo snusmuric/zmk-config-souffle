@@ -97,7 +97,7 @@
         };
 
         combo_activate_bluetooth_layer {
-            bindings = <&tog NAVIGATION>;
+            bindings = <&tog BLUETOOTH>;
             key-positions = <LH4 RH4>;
         };
   };
