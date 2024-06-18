@@ -12,6 +12,11 @@
 #define NAVIGATION 2
 #define BLUETOOTH 3
 
+#ifdef HAS_UROB
+  #define HAS_TRI_STATE
+  #define HAS_NUM_WORD
+#endif
+
 // ZMK includes
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -25,6 +30,7 @@
 #include "includes/settings.dtsi"
 #include "includes/combos.dtsi"
 #include "includes/behaviours_homerow_mods.dtsi"
+#include "includes/behaviours_mod_morph.dtsi"
 #include "includes/behaviours_other.dtsi"
 
 // Enable Mouse Keys
@@ -52,8 +58,8 @@
             display-name = "Base";
             bindings = <
 &ht LGUI TAB           &kp N1  &kp N2    &kp N3        &kp N4                 &kp N5                                                                               &kp N6          &kp N7                &kp N8         &kp N9         &kp N0            &ht RGUI EQUAL
-&ht LSHFT GRAVE        &kp Q   &kp W     &kp E         &kp R                  &kp T                                                                                &kp Y           &kp U                 &kp I          &kp O          &kp P             &ht RSHFT LBKT
-&kp LCTRL              &hm_l LCTRL A    &hm_l LALT S   &hm_l LGUI D           &hm_shift_l LSHFT F    &kp G                                                         &kp H           &hm_shift_r RSHFT J   &hm_r RGUI K   &hm_r RALT  L  &hm_r RCTRL SEMI  &ht RCTRL SQT
+&hm_l LCTRL GRAVE      &kp Q   &kp W     &kp E         &kp R                  &kp T                                                                                &kp Y           &kp U                 &kp I          &kp O          &kp P             &ht RSHFT LBKT
+&mm_shift_caps_word_l  &hm_l LCTRL A    &hm_l LALT S   &hm_l LGUI D           &hm_shift_l LSHFT F    &kp G                                                         &kp H           &hm_shift_r RSHFT J   &hm_r RGUI K   &hm_r RALT  L  &hm_r RCTRL SEMI  &ht RCTRL SQT
 &ht LALT BSLH          &kp Z   &kp X     &kp C         &kp V                  &kp B                  &ht LC(LS(LALT)) LG(SPACE)    &ht LC(LS(LALT)) MINUS  &kp N           &kp M               &kp COMMA      &kp DOT    &kp FSLH  &ht RALT RBKT
                                &kp LGUI  &kp LEFT_ALT  &lt NAVIGATION ESCAPE  &ht LSHFT SPACE  &lt SYMBOL TAB                &lt SYMBOL RET          &ht RSHFT BSPC  &lt NAVIGATION DEL  &kp RIGHT_ALT  &kp RCTRL
             >;
