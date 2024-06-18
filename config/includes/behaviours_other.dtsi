@@ -150,16 +150,16 @@
         * Double Tap: SYM_WORD layer
         * Triple Tap: SYM layer toggled
         */
-        td_sym_layer: td_sym_layer {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            #ifdef HAS_UROB
-                bindings = <&mm_spc_unds_layer>, <&sym_word>;
-            #else
-                bindings = <&mm_spc_unds_layer>, <&tog SYM>;
-            #endif
-        };
+        // td_sym_layer: td_sym_layer {
+        //     compatible = "zmk,behavior-tap-dance";
+        //     #binding-cells = <0>;
+        //     tapping-term-ms = <250>;
+        //     #ifdef HAS_UROB
+        //         bindings = <&mm_spc_unds_layer>, <&sym_word>;
+        //     #else
+        //         bindings = <&mm_spc_unds_layer>, <&tog SYM>;
+        //     #endif
+        // };
 
         #ifdef HAS_UROB
             nav_word: nav_word {
