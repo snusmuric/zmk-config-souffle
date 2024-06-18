@@ -7,6 +7,11 @@
 // Useful web keymap editor
 // https://nickcoutsos.github.io/keymap-editor/
 
+#define DEFAULT 0
+#define SYMBOL 1
+#define NAVIGATION 2
+#define BLUETOOTH 3
+
 // ZMK includes
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -28,10 +33,6 @@
 #include "includes/mouse_keys.dtsi"
 #endif
 
-#define DEFAULT 0
-#define SYMBOL 1
-#define NAVIGATION 2
-#define BLUETOOTH 3
 
 /*                                      60 KEY MATRIX / LAYOUT MAPPING
 
