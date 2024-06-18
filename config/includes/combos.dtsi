@@ -26,11 +26,6 @@
             key-positions = <40 28>;
         };
 
-        combo_bluetooth {
-            bindings = <&to BLUETOOTH>;
-            key-positions = <41 17>;
-        };
-
         combo_f1 {
             bindings = <&kp F1>;
             key-positions = <13 1>;
@@ -91,13 +86,13 @@
             key-positions = <23 35>;
         };
 
-        combo_lock_symbol_layer {
-            bindings = <&tog NAVIGATION>;
-            key-positions = <59 58>;
+        combo_lock_nav_layer {
+            bindings = <&tog NAV>;
+            key-positions = <RH3 RH4>;
         };
 
-        combo_activate_bluetooth_layer {
-            bindings = <&tog BLUETOOTH>;
+        combo_toggle_adjust_layer {
+            bindings = <&tog ADJUST>;
             key-positions = <LH4 RH4>;
         };
   };
