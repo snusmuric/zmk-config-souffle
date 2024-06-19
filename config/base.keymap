@@ -81,11 +81,11 @@
     Nav_Word_layer {
       display-name = "Nav Word";
       bindings = <
-&to BASE            &kp F1              &kp F2         &kp F3                &kp F4                &kp F5                                     &kp F6    &kp F7                   &kp F8               &kp F9             &kp F10          &kp F11
-&trans              &kp KP_ASTERISK     &kp N7         &kp N8                &kp N9                &kp PLUS                                   &kp INS   &none                    &none                &none              &kp PRINTSCREEN  &kp F12
-&trans              &hm_l LCTRL SLASH   &hm_l LALT N4  &hm_l LGUI N5         &hm_shift_l LSHFT N6  &kp MINUS                                  &kp LEFT  &kp DOWN                 &kp UP_ARROW         &kp RIGHT          &none            &trans
-&ht LEFT_ALT EQUAL  &kp N0              &kp N1         &kp N2                &kp NUMBER_3          &kp DOT         &ht LC(LS(LALT)) ESC       &trans  &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP          &kp END            &none            &trans
-                                                                                         &trans  &trans  &to BASE  &trans  &trans              &trans  &trans   &trans  &trans  &trans
+&to BASE            &kp F1              &kp F2         &kp F3                &kp F4                &kp F5                                          &kp F6    &kp F7                   &kp F8               &kp F9             &kp F10          &kp F11
+&trans              &kp KP_ASTERISK     &kp N7         &kp N8                &kp N9                &kp PLUS                                        &kp INS   &none                    &none                &none              &kp PRINTSCREEN  &kp F12
+&trans              &hm_l LCTRL SLASH   &hm_l LALT N4  &hm_l LGUI N5         &hm_shift_l LSHFT N6  &kp MINUS                                       &kp LEFT  &kp DOWN                 &kp UP_ARROW         &kp RIGHT          &none            &trans
+&ht LEFT_ALT EQUAL  &kp N0              &kp N1         &kp N2                &kp NUMBER_3          &kp DOT      &ht LC(LS(LALT)) ESC       &trans  &kp HOME  &kp PAGE_DOWN            &kp PAGE_UP          &kp END            &none            &trans
+                                                                                         &trans  &trans  &to BASE  &trans  &trans        &trans  &trans   &trans  &trans  &trans
       >;
      //  sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
     };
@@ -107,9 +107,9 @@
       bindings = <
 &trans              &kp F1                   &kp F2                &kp F3            &kp F4                  &kp F5                       &kp F6     &kp F7                   &kp F8                       &kp F9                        &kp F10               &kp F11
 &trans              &kp SQT                  &kp LESS_THAN         &kp GREATER_THAN  &kp DOUBLE_QUOTES       &kp DOT                      &kp AMPS   &kp SEMICOLON            &kp LEFT_BRACKET             &kp RIGHT_BRACKET             &kp PERCENT           &kp F12
-&trans              &hm_l LCTRL EXCLAMATION  &hm_l LALT MINUS      &hm_l LGUI  PLUS  &hm_shift_l LSHFT EQUAL &kp HASH                     &kp PIPE   &hm_shift_r RSHFT COLON  &hm_r RGUI LEFT_PARENTHESIS  &hm_r RALT RIGHT_PARENTHESIS  &hm_r RCTRL QUESTION  &trans
+&trans              &kp EXCLAMATION          &kp MINUS             &kp PLUS          &kp EQUAL               &kp HASH                     &kp PIPE   &kp COLON                &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS         &kp QUESTION  &trans
 &ht LEFT_ALT EQUAL  &kp CARET                &kp SLASH             &kp ASTERISK      &kp BACKSLASH           &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
-                                     &trans   &trans  &to BASE  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans
+                                                                                     &trans   &trans  &to BASE  &trans  &trans            &trans  &trans  &trans  &trans  &trans
       >;
      //  sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
     };
@@ -146,9 +146,9 @@
             bindings = <
 &trans              &kp F1                   &kp F2                &kp F3            &kp F4                  &kp F5                       &kp F6     &kp F7                   &kp F8                       &kp F9                        &kp F10               &kp F11
 &trans              &kp SQT                  &kp LESS_THAN         &kp GREATER_THAN  &kp DOUBLE_QUOTES       &kp DOT                      &kp AMPS   &kp SEMICOLON            &kp LEFT_BRACKET             &kp RIGHT_BRACKET             &kp PERCENT           &kp F12
-&trans              &hm_l LCTRL EXCLAMATION  &hm_l LALT MINUS      &hm_l LGUI  PLUS  &hm_shift_l LSHFT EQUAL &kp HASH                     &kp PIPE   &hm_shift_r RSHFT COLON  &hm_r RGUI LEFT_PARENTHESIS  &hm_r RALT RIGHT_PARENTHESIS  &hm_r RCTRL QUESTION  &trans
+&trans              &kp EXCLAMATION          &kp MINUS             &kp PLUS          &kp EQUAL               &kp HASH                     &kp PIPE   &kp COLON                &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS         &kp QUESTION  &trans
 &ht LEFT_ALT EQUAL  &kp CARET                &kp SLASH             &kp ASTERISK      &kp BACKSLASH           &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
-                                     &trans   &trans  &to BASE  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans
+                                                                                     &trans   &trans  &to BASE  &trans  &trans     &trans  &trans  &trans  &trans  &trans
             >;
 
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
