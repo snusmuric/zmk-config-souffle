@@ -68,11 +68,11 @@
         Base_layer {
             display-name = "Base";
             bindings = <
-&ht LGUI TAB           &kp N1  &kp N2    &kp N3        &kp N4                 &kp N5                                                                               &kp N6          &kp N7                &kp N8         &kp N9         &kp N0            &ht RGUI EQUAL
-&ht LSHFT GRAVE        &kp Q   &kp W     &kp E         &kp R                  &kp T                                                                                &kp Y           &kp U                 &kp I          &kp O          &kp P             &ht RSHFT LBKT
-&kp LCTRL              &hm_l LCTRL A    &hm_l LALT S   &hm_l LGUI D           &hm_shift_l LSHFT F    &kp G                                                         &kp H           &hm_shift_r RSHFT J   &hm_r RGUI K   &hm_r RALT  L  &hm_r RCTRL SEMI  &ht RCTRL SQT
-&ht LALT BSLH          &kp Z   &kp X     &kp C         &kp V                  &kp B                  &ht LC(LS(LALT)) LG(SPACE)    &ht LC(LS(LALT)) MINUS  &kp N           &kp M               &kp COMMA      &kp DOT    &kp FSLH  &ht RALT RBKT
-                               &kp LGUI  &kp LEFT_ALT  &lt NAV ESCAPE  &ht LSHFT SPACE  &lt SYM TAB                &lt SYM RET          &ht RSHFT BSPC  &lt NAV DEL  &kp RIGHT_ALT  &mm_shift_caps_word_r
+&ht LGUI TAB           &kp N1          &kp N2         &kp N3        &kp N4                 &kp N5                                                           &kp N6          &kp N7                &kp N8         &kp N9         &kp N0            &ht RGUI EQUAL
+&ht LSHFT GRAVE        &kp Q           &kp W          &kp E         &kp R                  &kp T                                                            &kp Y           &kp U                 &kp I          &kp O          &kp P             &ht RSHFT LBKT
+&kp LCTRL              &hm_l LCTRL A   &hm_l LALT S   &hm_l LGUI D  &hm_shift_l LSHFT F    &kp G                                                            &kp H           &hm_shift_r RSHFT J   &hm_r RGUI K   &hm_r RALT  L  &hm_r RCTRL SEMI  &ht RCTRL SQT
+&ht LALT BSLH          &kp Z           &kp X          &kp C         &kp V                  &kp B   &ht LC(LS(LALT)) LG(SPACE)       &ht LC(LS(LALT)) MINUS  &kp N           &kp M                 &kp COMMA      &kp DOT    &kp FSLH  &ht RALT RBKT
+                               &kp LGUI  &kp LEFT_ALT  &lt NAV ESCAPE  &ht LSHFT SPACE  &lt SYM TAB                                 &lt SYM RET          &ht RSHFT BSPC  &lt NAV DEL  &kp RIGHT_ALT  &mm_shift_caps_word_r
             >;
 
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -81,11 +81,11 @@
     Nav_Word_layer {
       display-name = "Nav Word";
       bindings = <
-&to BASE            &kp F1           &kp F2        &kp F3  &kp F4        &kp F5                                     &kp F6    &kp F7         &kp F8        &kp F9     &kp F10          &kp F11
-&trans              &kp KP_ASTERISK  &kp N7        &kp N8  &kp N9        &kp PLUS                                   &kp INS   &none          &none         &none      &kp PRINTSCREEN  &kp F12
-&trans              &kp SLASH        &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp MINUS                                  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none            &trans
-&ht LEFT_ALT EQUAL  &kp N0           &kp N1        &kp N2  &kp NUMBER_3  &kp DOT    &ht LC(LS(LALT)) ESC    &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &none            &trans
-                                     &trans        &trans  &to BASE      &trans     &trans                  &trans  &trans    &trans         &trans        &trans
+&to BASE            &kp F1              &kp F2         &kp F3                &kp F4          &kp F5                                     &kp F6    &kp F7                   &kp F8               &kp F9             &kp F10          &kp F11
+&trans              &kp KP_ASTERISK     &kp N7         &kp N8                &kp N9          &kp PLUS                                   &kp INS   &none                    &none                &none              &kp PRINTSCREEN  &kp F12
+&trans              &hm_l LCTRL SLASH   &hm_l LALT N4  &hm_l LGUI N5         &hm_shift_l N6  &kp MINUS                                  &kp LEFT  &hm_shift_r RSHFT DOWN   &hm_r RGUI UP_ARROW  &hm_r RCTRL RIGHT  &none            &trans
+&ht LEFT_ALT EQUAL  &kp N0              &kp N1         &kp N2                &kp NUMBER_3    &kp DOT         &ht LC(LS(LALT)) ESC       &trans  &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP          &kp END            &none            &trans
+                                                            &trans  &trans  &to BASE  &trans  &trans         &trans  &trans   &trans  &trans  &trans
       >;
      //  sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
     };
@@ -95,8 +95,8 @@
       bindings = <
 &to BASE            &kp F1           &kp F2        &kp F3  &kp F4        &kp F5                                     &kp F6    &kp F7         &kp F8        &kp F9     &kp F10          &kp F11
 &trans              &kp KP_ASTERISK  &kp N7        &kp N8  &kp N9        &kp PLUS                                   &kp INS   &none          &none         &none      &kp PRINTSCREEN  &kp F12
-&trans              &kp SLASH        &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp MINUS                                  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none            &trans
-&ht LEFT_ALT EQUAL  &kp N0           &kp N1        &kp N2  &kp NUMBER_3  &kp DOT    &ht LC(LS(LALT)) ESC    &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &none            &trans
+&trans              &kp SLASH        &kp N4        &kp N5  &kp N6        &kp MINUS                                  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none            &trans
+&ht LEFT_ALT EQUAL  &kp N0           &kp N1        &kp N2  &kp N3        &kp DOT    &ht LC(LS(LALT)) ESC    &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &none            &trans
                                      &trans        &trans  &to BASE      &trans     &trans                  &trans  &trans    &trans         &trans        &trans
       >;
      //  sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
@@ -105,11 +105,11 @@
     Sym_Word_layer {
       display-name = "Sym Word";
       bindings = <
-&trans              &kp F1           &kp F2         &kp F3            &kp F4             &kp F5                       &kp F6     &kp F7         &kp F8                &kp F9                 &kp F10       &kp F11
-&trans              &kp SQT          &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp DOT                      &kp AMPS   &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &kp F12
-&trans              &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH                     &kp PIPE   &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
-&ht LEFT_ALT EQUAL  &kp CARET        &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &trans
-                                     &trans         &trans            &to BASE           &trans     &trans    &trans  &trans     &trans         &trans                &trans
+&trans              &kp F1                   &kp F2                &kp F3            &kp F4                  &kp F5                       &kp F6     &kp F7                   &kp F8                       &kp F9                        &kp F10               &kp F11
+&trans              &kp SQT                  &kp LESS_THAN         &kp GREATER_THAN  &kp DOUBLE_QUOTES       &kp DOT                      &kp AMPS   &kp SEMICOLON            &kp LEFT_BRACKET             &kp RIGHT_BRACKET             &kp PERCENT           &kp F12
+&trans              &hm_l LCTRL EXCLAMATION  &hm_l LALT MINUS      &hm_l LGUI  PLUS  &hm_shift_l LSHFT EQUAL &kp HASH                     &kp PIPE   &hm_shift_r RSHFT COLON  &hm_r RGUI LEFT_PARENTHESIS  &hm_r RALT RIGHT_PARENTHESIS  &hm_r RCTRL QUESTION  &trans
+&ht LEFT_ALT EQUAL  &kp CARET                &kp SLASH             &kp ASTERISK      &kp BACKSLASH           &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
+                                     &trans   &trans  &to BASE  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans
       >;
      //  sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
     };
@@ -118,10 +118,23 @@
         Nav_layer {
             display-name = "Nav";
             bindings = <
+&to BASE            &kp F1              &kp F2         &kp F3                &kp F4          &kp F5                                     &kp F6    &kp F7                   &kp F8               &kp F9             &kp F10          &kp F11
+&trans              &kp KP_ASTERISK     &kp N7         &kp N8                &kp N9          &kp PLUS                                   &kp INS   &none                    &none                &none              &kp PRINTSCREEN  &kp F12
+&trans              &hm_l LCTRL SLASH   &hm_l LALT N4  &hm_l LGUI N5         &hm_shift_l N6  &kp MINUS                                  &kp LEFT  &hm_shift_r RSHFT DOWN   &hm_r RGUI UP_ARROW  &hm_r RCTRL RIGHT  &none            &trans
+&ht LEFT_ALT EQUAL  &kp N0              &kp N1         &kp N2                &kp NUMBER_3    &kp DOT         &ht LC(LS(LALT)) ESC       &trans  &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP          &kp END            &none            &trans
+                                                            &trans  &trans  &to BASE  &trans  &trans         &trans  &trans   &trans  &trans  &trans
+            >;
+
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        Num_layer {
+            display-name = "Num";
+            bindings = <
 &to BASE            &kp F1           &kp F2        &kp F3  &kp F4        &kp F5                                     &kp F6    &kp F7         &kp F8        &kp F9     &kp F10          &kp F11
 &trans              &kp KP_ASTERISK  &kp N7        &kp N8  &kp N9        &kp PLUS                                   &kp INS   &none          &none         &none      &kp PRINTSCREEN  &kp F12
-&trans              &kp SLASH        &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp MINUS                                  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none            &trans
-&ht LEFT_ALT EQUAL  &kp N0           &kp N1        &kp N2  &kp NUMBER_3  &kp DOT    &ht LC(LS(LALT)) ESC    &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &none            &trans
+&trans              &kp SLASH        &kp N4        &kp N5  &kp N6        &kp MINUS                                  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none            &trans
+&ht LEFT_ALT EQUAL  &kp N0           &kp N1        &kp N2  &kp N3        &kp DOT    &ht LC(LS(LALT)) ESC    &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &none            &trans
                                      &trans        &trans  &to BASE      &trans     &trans                  &trans  &trans    &trans         &trans        &trans
             >;
 
@@ -131,11 +144,11 @@
         Sym_layer {
             display-name = "Sym";
             bindings = <
-&trans              &kp F1           &kp F2         &kp F3            &kp F4             &kp F5                       &kp F6     &kp F7         &kp F8                &kp F9                 &kp F10       &kp F11
-&trans              &kp SQT          &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp DOT                      &kp AMPS   &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &kp F12
-&trans              &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH                     &kp PIPE   &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
-&ht LEFT_ALT EQUAL  &kp CARET        &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &trans
-                                     &trans         &trans            &to BASE           &trans     &trans    &trans  &trans     &trans         &trans                &trans
+&trans              &kp F1                   &kp F2                &kp F3            &kp F4                  &kp F5                       &kp F6     &kp F7                   &kp F8                       &kp F9                        &kp F10               &kp F11
+&trans              &kp SQT                  &kp LESS_THAN         &kp GREATER_THAN  &kp DOUBLE_QUOTES       &kp DOT                      &kp AMPS   &kp SEMICOLON            &kp LEFT_BRACKET             &kp RIGHT_BRACKET             &kp PERCENT           &kp F12
+&trans              &hm_l LCTRL EXCLAMATION  &hm_l LALT MINUS      &hm_l LGUI  PLUS  &hm_shift_l LSHFT EQUAL &kp HASH                     &kp PIPE   &hm_shift_r RSHFT COLON  &hm_r RGUI LEFT_PARENTHESIS  &hm_r RALT RIGHT_PARENTHESIS  &hm_r RCTRL QUESTION  &trans
+&ht LEFT_ALT EQUAL  &kp CARET                &kp SLASH             &kp ASTERISK      &kp BACKSLASH           &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
+                                     &trans   &trans  &to BASE  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans
             >;
 
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -146,7 +159,7 @@
         bindings = <
 &to BASE            &kp F1           &kp F2        &kp F3  &kp F4        &kp F5                                     &kp F6    &kp F7         &kp F8        &kp F9     &kp F10          &kp F11
 &trans              &kp KP_ASTERISK  &kp N7        &kp N8  &kp N9        &kp PLUS                                   &kp INS   &none          &none         &none      &kp PRINTSCREEN  &kp F12
-&trans              &kp SLASH        &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp MINUS                                  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none            &trans
+&trans              &kp SLASH        &kp N4        &kp N5  &kp NUMBER_6  &kp MINUS                                  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &none            &trans
 &ht LEFT_ALT EQUAL  &kp N0           &kp N1        &kp N2  &kp NUMBER_3  &kp DOT    &ht LC(LS(LALT)) ESC    &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &none            &trans
                                      &trans        &trans  &to BASE      &trans     &trans                  &trans  &trans    &trans         &trans        &trans
         >;
@@ -159,7 +172,7 @@
 &to BASE     &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &bt BT_DISC 0    &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                   &none   &none   &none   &none   &none   &none
 &trans       &bt BT_CLR_ALL   &none          &none          &none          &none                           &none   &none   &none   &none   &none   &trans
-&trans       &none            &none          &bt BT_CLR     &none          &trans    &soft_off      &none   &none   &none   &none   &none   &none   &trans
+&trans       &none            &none          &bt BT_CLR     &none          &trans    &soft_off      &none  &none   &none   &none   &none   &none   &trans
                                                &trans  &trans  &to BASE    &trans  &trans         &trans  &trans  &trans  &trans  &trans
             >;
 
