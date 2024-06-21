@@ -69,11 +69,11 @@
 		Base_layer {
 			display-name = "Base";
 			bindings = <
-			&kp ESC             &kp N1          &kp N2         &kp N3        &kp N4                 &kp N5                                                           &kp N6          &kp N7                &kp N8         &kp N9         &kp N0            &kp EQUAL
-			&ht LGUI GRAVE      &kp Q           &kp W          &kp E         &kp R                  &kp T                                                            &kp Y           &kp U                 &kp I          &kp O          &kp P             &ht RGUI LBKT
-			&kp LCTRL           &hm_l LCTRL A   &hm_l LALT S   &hm_l LGUI D  &hm_shift_l LSHFT F    &kp G                                                            &kp H           &hm_shift_r RSHFT J   &hm_r RGUI K   &hm_r RALT  L  &hm_r RCTRL SEMI  &ht RCTRL SQT
-			&ht LALT BSLH       &kp Z           &kp X          &kp C         &kp V                  &kp B   &ht LC(LS(LALT)) LG(SPACE)       &ht LC(LS(LALT)) MINUS  &kp N           &kp M                 &kp COMMA      &kp DOT        &kp FSLH          &ht RALT RBKT
-			&kp LGUI  &td_nav_layer  &lt NAV ESCAPE  &ht LSHFT SPACE  &lt SYM TAB                   &td_sym_layer  &ht RSHFT BSPC  &td_nav_layer  &lt_num_word   &mm_shift_caps_word_r
+			&kp ESC                &kp N1          &kp N2         &kp N3        &kp N4                 &kp N5                                                           &kp N6          &kp N7                &kp N8         &kp N9         &kp N0            &kp EQUAL
+			&ht LGUI GRAVE         &kp Q           &kp W          &kp E         &kp R                  &kp T                                                            &kp Y           &kp U                 &kp I          &kp O          &kp P             &ht RGUI LBKT
+			&kp LCTRL              &hm_l LCTRL A   &hm_l LALT S   &hm_l LGUI D  &hm_shift_l LSHFT F    &kp G                                                            &kp H           &hm_shift_r RSHFT J   &hm_r RGUI K   &hm_r RALT  L  &hm_r RCTRL SEMI  &ht RCTRL SQT
+			&ht LALT BSLH          &kp Z           &kp X          &kp C         &kp V                  &kp B   &ht LC(LS(LALT)) LG(SPACE)       &ht LC(LS(LALT)) MINUS  &kp N           &kp M                 &kp COMMA      &kp DOT        &kp FSLH          &ht RALT RBKT
+			&mm_shift_caps_word_r  &td_nav_layer  &lt NAV ESCAPE  &ht LSHFT SPACE  &lt SYM TAB                   &td_sym_layer  &ht RSHFT BSPC  &td_nav_layer  &lt_num_word   &mm_shift_caps_word_r
 			>;
 			
 			//sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;§
