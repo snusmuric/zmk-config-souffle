@@ -1,0 +1,10 @@
+/ {
+	// macros {
+	// 	lock_sym_layer: lock_sym_layer {
+	// 		label = "lock_sym_layer";
+	// 		compatible = "zmk,behavior-macro";
+	// 		#binding-cells = <0>;
+	// 		bindings = <&tog SYM &kp K_CANCEL>;
+	// 	};
+	// };
+};
