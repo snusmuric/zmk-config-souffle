@@ -179,7 +179,7 @@
 			&trans              &trans              &trans         &trans                &trans                &trans                                           &trans     &trans                    &trans                       &trans                        &trans               &trans
 			&trans              &trans              &trans         &trans                &trans                &trans                                           &trans     &trans                    &trans                       &trans                        &trans               &trans
 			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trace  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &trans
 			>;
 		};
 		
