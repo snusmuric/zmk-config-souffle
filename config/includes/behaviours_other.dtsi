@@ -244,17 +244,36 @@
 
 
         lt_num_word: lt_num_word {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
 
             #ifdef HAS_UROB
-                bindings = <&mo>, <&num_word>;
+                bindings = <&mo NUM>, <&my_num_word>;
             #else
-                bindings = <&mo>, <&tog>;
+                bindings = <&mo NUM>, <&tog NUM>;
             #endif
         };
+
+        #ifdef HAS_UROB
+            my_num_word: my_num_word {
+                compatible = "zmk,behavior-caps-word";
+                #binding-cells = <0>;
+                layers = <NUM_WORD>;
+                continue-list = <
+                    BACKSPACE DELETE DOT COMMA
+                    SLASH ASTERISK PLUS MINUS EQUAL DOLLAR
+                    RS(SPACE) 
+                    N0 N1 N2 N3 N4 N5 N6 N7 N8 N9
+                >;
+                ignore-modifiers;  // modifiers don't deactivate the layer
+            };
+        #else
+            my_num_word: my_num_word {
+                compatible = "zmk,behavior-none";
+                #binding-cells = <0>;
+            };
+        #endif
 
        /*
         * Layer Toggle
