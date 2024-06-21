@@ -118,13 +118,6 @@
 			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
 		};
 		
-		combo_lock_nav_layer {
-			bindings = <&tog NAV>;
-			key-positions = <RH3 RH4>;
-			timeout-ms = <COMBO_TERM_SLOW>;
-			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-		};
-		
 		combo_toggle_adjust_layer {
 			bindings = <&tog ADJUST>;
 			key-positions = <LH4 RH4>;
@@ -134,7 +127,7 @@
 		
 		combo_toggle_func_layer {
 			bindings = <&tog FUNC>;
-			key-positions = <LH3 RH3>;
+			key-positions = <LH0 RH0>;
 			timeout-ms = <COMBO_TERM_SLOW>;
 			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
 		};
