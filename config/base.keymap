@@ -9,15 +9,15 @@
 
 // Define layer numbers
 #define BASE 0
-#define NAV_WORD 1
-#define NAV 2
-#define NAV_LOCKED 3
-#define NUM_WORD 4
-#define NUM 5
-#define NUM_LOCKED 6
-#define SYM_WORD 7
-#define SYM 8
-#define SYM_LOCKED 9
+#define NUM_WORD 1
+#define NUM 2
+#define NUM_LOCKED 3
+#define SYM_WORD 4
+#define SYM 5
+#define SYM_LOCKED 6
+#define NAV_WORD 7
+#define NAV 8
+#define NAV_LOCKED 9
 #define FUNCT 10
 #define ADJUST 11
 // #define MOUSE_KEYS 12
@@ -78,44 +78,6 @@
 			&kp LCTRL              &hm_l LCTRL A    &hm_l LALT S   &hm_l LGUI D  &hm_shift_l LSHFT F    &kp G                                                            &kp H           &hm_shift_r RSHFT J   &hm_r RGUI K   &hm_r RALT  L  &hm_r RCTRL SEMI  &ht RCTRL SQT
 			&ht LALT BSLH          &kp Z            &kp X          &kp C         &kp V                  &kp B   &ht LC(LS(LALT)) LG(SPACE)       &ht LC(LS(LALT)) MINUS  &kp N           &kp M                 &kp COMMA      &kp DOT        &kp FSLH          &ht RALT RBKT
 			&mm_shift_caps_word_l  &lt_num_word     &lt NAV ESCAPE  &ht LSHFT SPACE  &lt SYM TAB                   &td_sym_layer  &ht RSHFT BSPC  &td_nav_layer  &lt_num_word   &mm_shift_caps_word_r
-			>;
-			
-			//sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-		};
-		
-		Nav_Word_layer {
-			display-name = "Nav Word";
-			bindings = <
-			&to BASE               &kp F1              &kp F2         &kp F3                &kp F4                &kp F5                                        &kp F6      &kp F7                   &kp F8               &kp F9             &kp F10            &kp F11
-			&kp LGUI               &kp PRINTSCREEN     &none          &none                 &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &kp F12
-			&kp LCTRL              &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
-			&kp LALT               &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
-			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &to NAV_LOCKED
-			>;
-			//  sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
-		};
-		
-		Nav_layer {
-			display-name = "Nav";
-			bindings = <
-			&to BASE              &kp F1              &kp F2         &kp F3                &kp F4                &kp F5                                        &kp F6      &kp F7                   &kp F8               &kp F9             &kp F10            &kp F11
-			&kp LGUI              &kp PRINTSCREEN     &none          &none                 &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &kp F12
-			&kp LCTRL              &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
-			&kp LALT              &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
-			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &tog NAV_LOCKED
-			>;
-			
-			//sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-		};
-		
-		Nav_layer_LOCKED {
-			display-name = "Nav";
-			bindings = <
-			&to BASE              &kp F1              &kp F2         &kp F3                &kp F4                &kp F5                                        &kp F6      &kp F7                   &kp F8               &kp F9             &kp F10            &kp F11
-			&kp LGUI              &kp PRINTSCREEN     &none          &none                 &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &kp F12
-			&kp LCTRL              &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
-			&kp LALT              &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
-			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &trans
 			>;
 			
 			//sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -192,6 +154,44 @@
 			&kp LCTRL           &kp EXCLAMATION          &kp MINUS             &kp PLUS          &kp EQUAL               &kp HASH                     &kp PIPE   &kp COLON                &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS         &kp QUESTION  &trans
 			&ht LEFT_ALT EQUAL  &kp CARET                &kp SLASH             &kp ASTERISK      &kp BACKSLASH           &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
 			&trans   &trans  &to BASE  &trans  &trans                                                                                         &trans  &trans  &trans  &trans  &trans
+			>;
+			
+			//sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};
+		
+		Nav_Word_layer {
+			display-name = "Nav Word";
+			bindings = <
+			&to BASE               &kp F1              &kp F2         &kp F3                &kp F4                &kp F5                                        &kp F6      &kp F7                   &kp F8               &kp F9             &kp F10            &kp F11
+			&kp LGUI               &kp PRINTSCREEN     &none          &none                 &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &kp F12
+			&kp LCTRL              &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
+			&kp LALT               &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
+			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &to NAV_LOCKED
+			>;
+			//  sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
+		};
+		
+		Nav_layer {
+			display-name = "Nav";
+			bindings = <
+			&to BASE              &kp F1              &kp F2         &kp F3                &kp F4                &kp F5                                        &kp F6      &kp F7                   &kp F8               &kp F9             &kp F10            &kp F11
+			&kp LGUI              &kp PRINTSCREEN     &none          &none                 &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &kp F12
+			&kp LCTRL              &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
+			&kp LALT              &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
+			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &tog NAV_LOCKED
+			>;
+			
+			//sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};
+		
+		Nav_layer_LOCKED {
+			display-name = "Nav";
+			bindings = <
+			&to BASE              &kp F1              &kp F2         &kp F3                &kp F4                &kp F5                                        &kp F6      &kp F7                   &kp F8               &kp F9             &kp F10            &kp F11
+			&kp LGUI              &kp PRINTSCREEN     &none          &none                 &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &kp F12
+			&kp LCTRL              &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                        &kp END     &kp LEFT                &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
+			&kp LALT              &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
+			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &trans
 			>;
 			
 			//sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
