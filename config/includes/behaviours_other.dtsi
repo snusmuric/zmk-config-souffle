@@ -275,6 +275,13 @@
             };
         #endif
 
+        lt_func: lt_func {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&mo FUNC>, <&to FUNC>;
+        };
+
        /*
         * Layer Toggle
         *
