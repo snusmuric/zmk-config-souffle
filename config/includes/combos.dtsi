@@ -125,27 +125,6 @@
 			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
 		};
 		
-		// combo_toggle_nav_layer {
-		// 	bindings = <&tog NAV>;
-		// 	key-positions = <RH4 RH2>;
-		// 	timeout-ms = <COMBO_TERM_SLOW>;
-		// 	require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-		// };
-		
-		// combo_toggle_num_layer {
-		// 	bindings = <&tog NUM>;
-		// 	key-positions = <RH4 RH3>;
-		// 	timeout-ms = <COMBO_TERM_SLOW>;
-		// 	require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-		// };
-		
-		// combo_toggle_sym_layer {
-		// 	bindings = <&tog SYM>;
-		// 	key-positions = <RH4 RH0>;
-		// 	timeout-ms = <COMBO_TERM_SLOW>;
-		// 	require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-		// };
-		
 		combo_toggle_funct_layer {
 			bindings = <&tog FUNCT>;
 			// key-positions = <LH3 RH4>;
