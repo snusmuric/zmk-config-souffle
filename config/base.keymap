@@ -112,7 +112,7 @@
 			&trans              &kp KP_ASTERISK     &kp N7         &kp N8                &kp N9                &kp PLUS                                         &kp AMPS   &kp SEMICOLON            &kp LEFT_BRACKET             &kp RIGHT_BRACKET             &kp PERCENT           &kp F12
 			&trans              &hm_l LCTRL SLASH   &hm_l LALT N4  &hm_l LGUI N5         &hm_shift_l LSHFT N6  &kp MINUS                                        &kp PIPE   &hm_shift_r RSHFT COLON  &hm_r RGUI LEFT_PARENTHESIS  &hm_r RALT RIGHT_PARENTHESIS  &hm_r RCTRL QUESTION  &trans
 			&ht LEFT_ALT EQUAL  &kp N0              &kp N1         &kp N2                &kp NUMBER_3          &kp DOT         &ht LC(LS(LALT)) ESC     &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
-			&trans  &trans  &to BASE  &trans  &trans                                                                                                    &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &to BASE  &trans  &trans                                                                                                    &trans  &trans  &trans  &trans  &to BASE
 			>;
 		};
 		
@@ -145,7 +145,7 @@
 			&kp LGUI            &kp SQT                  &kp LESS_THAN         &kp GREATER_THAN  &kp DOUBLE_QUOTES       &kp DOT                      &kp AMPS   &kp SEMICOLON            &kp LEFT_BRACKET             &kp RIGHT_BRACKET             &kp PERCENT           &kp F12
 			&kp LCTRL           &kp EXCLAMATION          &kp MINUS             &kp PLUS          &kp EQUAL               &kp HASH                     &kp PIPE   &kp COLON                &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS         &kp QUESTION  &trans
 			&ht LEFT_ALT EQUAL  &kp CARET                &kp SLASH             &kp ASTERISK      &kp BACKSLASH           &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
-			&trans   &trans  &to BASE  &trans  &trans                                                                                         &trans  &trans  &trans  &trans  &trans
+			&trans   &trans  &to BASE  &trans  &trans                                                                                         &trans  &trans  &trans  &trans  &to BASE
 			>;
 		};
 		
@@ -165,7 +165,7 @@
 			bindings = <
 			&to BASE              &kp F1              &kp F2         &kp F3                &kp F4                &kp F5                                        &kp F6      &kp F7                   &kp F8               &kp F9             &kp F10            &kp F11
 			&kp LGUI              &kp PRINTSCREEN     &none          &none                 &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &kp F12
-			&kp LCTRL              &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
+			&kp LCTRL              &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                        &kp END     &kp LEFT                &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
 			&kp LALT              &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
 			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &tog NAV_LOCKED
 			>;
@@ -178,7 +178,7 @@
 			&kp LGUI              &kp PRINTSCREEN     &none          &none                 &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &kp F12
 			&kp LCTRL              &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                        &kp END     &kp LEFT                &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
 			&kp LALT              &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
-			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &trans
+			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans   &to BASE
 			>;
 		};
 		
