@@ -92,27 +92,6 @@
             bindings = <&out OUT_TOG>, <&bt BT_CLR>;
         };
 
-
-        /*
-        * Tap dancing num layer
-        *
-        * Usage: &td_num_layer
-        * Tap: DEL
-        * Hold: NUM layer
-        * Double Tap: NUM_WORD layer
-        * Triple Tap: NUM layer toggled
-        */
-        td_num_layer: td_num_layer {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            #ifdef HAS_UROB
-                bindings = <&lt NUM DEL>, <&num_word>;
-            #else
-                bindings = <&lt NUM DEL>, <&tog NUM>;
-            #endif
-        };
-
         /*
         * Tap dancing nav layer
         *
@@ -122,24 +101,24 @@
         * Triple-Tap-Hold: DEL repeated
         * Hold: NAV layer
         */
-        td_nav_layer_inner: td_nav_layer_inner {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            #ifdef HAS_UROB
-                bindings = <&kp DEL>, <&nav_word>, <&kp DEL>;
-            #else
-                bindings = <&kp DEL>, <&tog NAV>, <&kp DEV>;
-            #endif
-        };
-        td_nav_layer: td_nav_layer {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <250>;
-            quick-tap-ms = <225>;
-            bindings = <&mo>, <&td_nav_layer_inner>;
-        };
+        // td_nav_layer_inner: td_nav_layer_inner {
+        //     compatible = "zmk,behavior-tap-dance";  
+        //     #binding-cells = <0>;
+        //     tapping-term-ms = <250>;
+        //     #ifdef HAS_UROB
+        //         bindings = <&kp DEL>, <&nav_word>, <&kp DEL>;
+        //     #else
+        //         bindings = <&kp DEL>, <&tog NAV>, <&kp DEV>;
+        //     #endif
+        // };
+        // td_nav_layer: td_nav_layer {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     flavor = "tap-preferred";
+        //     tapping-term-ms = <250>;
+        //     quick-tap-ms = <225>;
+        //     bindings = <&mo>, <&td_nav_layer_inner>;
+        // };
 
         /*
          * Shifted Space underscores + Layer Tap
@@ -175,6 +154,26 @@
                 bindings = <&lt_l SYM RET>, <&sym_word>;
             #else
                 bindings = <&lt_l SYM RET>, <&tog SYM>;
+            #endif
+        };
+
+        /*
+        * Tap dancing Nav layer
+        *
+        * Usage: &td_nav_layer
+        * Tap: Del
+        * Hold: Nav layer
+        * Double Tap: NAV_WORD layer
+        * Triple Tap: NAV layer toggled
+        */
+        td_nav_layer: td_nav_layer {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            #ifdef HAS_UROB
+                bindings = <&lt_l NAV DEL>, <&nav_word>;
+            #else
+                bindings = <&lt_l NAV DEL>, <&tog NAV>;
             #endif
         };
 
