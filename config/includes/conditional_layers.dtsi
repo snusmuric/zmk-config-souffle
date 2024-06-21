@@ -2,6 +2,7 @@
 	
 	conditional_layers {
 		compatible = "zmk,conditional-layers";
+		// Not convinient to use, it switches off when SYM && NUM layers buttons are released - not enough hands. Left as a reference
 		func_layer {
 			if-layers = <SYM NUM>;
 			then-layer = <FUNC>;
