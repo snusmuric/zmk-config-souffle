@@ -146,11 +146,11 @@
 		// 	require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
 		// };
 		
-		// combo_toggle_func_layer {
-		// 	bindings = <&tog FUNC>;
-		// 	key-positions = <LH0 RH0>;
-		// 	timeout-ms = <COMBO_TERM_SLOW>;
-		// 	require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-		// };
+		combo_toggle_func_layer {
+			bindings = <&tog FUNC>;
+			key-positions = <LH3 RH4>;
+			timeout-ms = <COMBO_TERM_SLOW>;
+			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+		};
 	};
 };
