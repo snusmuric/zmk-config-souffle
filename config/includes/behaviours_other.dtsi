@@ -171,9 +171,9 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             #ifdef HAS_UROB
-                bindings = <&lt_l NAV DEL>, <&nav_word>;
+                bindings = <&lt_l NAV ESCAPE>, <&nav_word>;
             #else
-                bindings = <&lt_l NAV DEL>, <&tog NAV>;
+                bindings = <&lt_l NAV ESCAPE>, <&tog NAV>;
             #endif
         };
 
