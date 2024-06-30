@@ -80,7 +80,7 @@
 			&mm_shift_caps_word_l  &lt_num_word     &td_nav_layer  &ht LSHFT SPACE  &lt SYM TAB                                                  &lt SYM ENTER    &ht RSHFT BSPC  &lt NAV DEL  &lt_num_word   &kp RSHFT
 			>;
 			
-			//sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LEFT RIGHT>;
 		};
 		
 		Num_Word_layer {
