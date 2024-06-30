@@ -80,7 +80,7 @@
 			&mm_shift_caps_word_l  &lt_num_word     &td_nav_layer  &ht LSHFT SPACE  &lt SYM TAB                                                  &lt SYM ENTER    &ht RSHFT BSPC  &lt NAV DEL  &lt_num_word   &kp RSHFT
 			>;
 			
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
+			sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
 		};
 		
 		Num_Word_layer {
@@ -92,6 +92,8 @@
 			&ht LEFT_ALT EQUAL  &kp N0              &kp N1         &kp N2                &kp NUMBER_3          &kp DOT         &ht LC(LS(LALT)) ESC     &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
 			&trans  &trans  &to BASE  &trans  &trans                                                                                                    &trans  &trans  &trans  &trans  &to NUM_LOCKED
 			>;
+			
+			sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
 		};
 		
 		Num_layer {
@@ -103,6 +105,8 @@
 			&ht LEFT_ALT EQUAL  &kp N0              &kp N1         &kp N2                &kp NUMBER_3          &kp DOT         &ht LC(LS(LALT)) ESC     &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
 			&trans  &trans  &to BASE  &trans  &trans                                                                                                    &trans  &trans  &trans  &trans  &to NUM_LOCKED
 			>;
+			
+			sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
 		};
 		
 		Num_layer_locked {
@@ -114,6 +118,8 @@
 			&ht LEFT_ALT EQUAL  &kp N0              &kp N1         &kp N2                &kp NUMBER_3          &kp DOT         &ht LC(LS(LALT)) ESC     &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
 			&trans  &trans  &to BASE  &trans  &trans                                                                                                    &trans  &trans  &trans  &trans  &to BASE
 			>;
+			
+			sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
 		};
 		
 		Sym_Word_layer {
@@ -125,6 +131,8 @@
 			&ht LEFT_ALT EQUAL    &kp CARET                &kp SLASH             &kp ASTERISK      &kp BACKSLASH           &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
 			&trans   &trans  &to BASE  &trans  &trans                                                                                         &trans  &trans  &trans  &trans  &to SYM_LOCKED
 			>;
+			
+			sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
 		};
 		
 		Sym_layer {
@@ -136,6 +144,8 @@
 			&ht LEFT_ALT EQUAL  &kp CARET                &kp SLASH             &kp ASTERISK      &kp BACKSLASH           &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
 			&trans   &trans  &to BASE  &trans  &trans                                                                                         &trans  &trans  &trans  &trans  &to SYM_LOCKED
 			>;
+			
+			sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
 		};
 		
 		Sym_layer_locked {
@@ -147,6 +157,8 @@
 			&ht LEFT_ALT EQUAL  &kp CARET                &kp SLASH             &kp ASTERISK      &kp BACKSLASH           &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
 			&trans   &trans  &to BASE  &trans  &trans                                                                                         &trans  &trans  &trans  &trans  &to BASE
 			>;
+			
+			sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
 		};
 		
 		Nav_Word_layer {
@@ -158,6 +170,8 @@
 			&kp LALT               &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
 			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &to NAV_LOCKED
 			>;
+			
+			sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
 		};
 		
 		Nav_layer {
@@ -180,6 +194,8 @@
 			&kp LALT              &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
 			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans   &to BASE
 			>;
+			
+			sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
 		};
 		
 		Funct_layer {
@@ -191,6 +207,8 @@
 			&kp LALT    &kp F13           &kp F1        &kp F2   &kp F3        &kp F17  &ht LC(LS(LALT)) ESC        &trans  &none      &none                    &none                        &none                         &none             &kp RALT
 			&trans        &trans   &to BASE      &trans     &trans                                                 &trans  &trans  &trans  &trans  &trans
 			>;
+			
+			sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
 		};
 		
 		Adjust_layer {
@@ -202,6 +220,8 @@
 			&trans       &none            &none          &bt BT_CLR     &none          &trans    &soft_off      &none  &none   &none   &none   &none   &none   &trans
 			&trans  &trans  &to BASE    &trans  &trans                                                          &trans  &trans  &trans  &trans  &trans
 			>;
+			
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_INC C_BRI_DEC>;
 		};
 	};
 };
