@@ -118,6 +118,20 @@
 		// 	require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
 		// };
 		
+		combo_equal_sign {
+			bindings = <&kp EQUAL>;
+			key-positions = <RN5 RT5>;
+			timeout-ms = <COMBO_TERM_FAST>;
+			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+		};
+		
+		combo_esc {
+			bindings = <&kp ESC>;
+			key-positions = <LN5 LT5>;
+			timeout-ms = <COMBO_TERM_FAST>;
+			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+		};
+		
 		combo_toggle_adjust_layer {
 			bindings = <&tog ADJUST>;
 			key-positions = <LH4 RH4>;
