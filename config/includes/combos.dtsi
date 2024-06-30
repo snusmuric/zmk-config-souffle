@@ -125,6 +125,13 @@
 			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
 		};
 		
+		combo_minus_sign {
+			bindings = <&kp MINUS>;
+			key-positions = <RN0 RB0>;
+			timeout-ms = <COMBO_TERM_FAST>;
+			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+		};
+		
 		combo_esc {
 			bindings = <&kp ESC>;
 			key-positions = <LN5 LT5>;
