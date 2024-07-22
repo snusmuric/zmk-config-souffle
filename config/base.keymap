@@ -172,7 +172,7 @@
 			display-name = "Nav Word";
 			bindings = <
 			&kp F1                 &kp F2              &kp F3         &kp F4                &kp F5                &kp F6                                        &kp F7      &kp F8                   &kp F9               &kp F10            &kp F1             &kp F12
-			&kp LGUI               &kp PRINTSCREEN     &none          &none                 &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &trans
+			&kp LGUI               &kp PRINTSCREEN     &kp LA(LG(N5)) &kp LA(LG(N6))        &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &trans
 			&kp LCTRL              &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
 			&kp LALT               &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
 			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &to NAV_LOCKED
@@ -186,7 +186,7 @@
 			display-name = "Nav";
 			bindings = <
 			&kp F1                &kp F2              &kp F3         &kp F4                &kp F5                &kp F6                                        &kp F7      &kp F8                   &kp F9               &kp F10            &kp F1             &kp F12
-			&kp LGUI              &kp PRINTSCREEN     &none          &none                 &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &trans
+			&kp LGUI              &kp PRINTSCREEN     &kp LA(LG(N5)) &kp LA(LG(N6))        &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &trans
 			&kp LCTRL             &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
 			&kp LALT              &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
 			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &tog NAV_LOCKED
