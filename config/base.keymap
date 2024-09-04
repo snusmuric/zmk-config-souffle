@@ -76,8 +76,8 @@
 			&kp F1                 &kp F2           &kp F3         &kp F4        &kp F5                 &kp F6                                                               &kp F7          &kp F8                &kp F9         &kp F10        &kp F11           &kp F12
 			&ht LGUI GRAVE         &kp Q            &kp W          &kp E         &kp R                  &kp T                                                                &kp Y           &kp U                 &kp I          &kp O          &kp P             &ht RGUI LBKT
 			&kp LCTRL              &hm_l LCTRL A    &hm_l LALT S   &hm_l LGUI D  &hm_shift_l LSHFT F    &kp G                                                                &kp H           &hm_shift_r RSHFT J   &hm_r RGUI K   &hm_r RALT  L  &hm_r RCTRL SEMI  &ht RCTRL SQT
-			&ht LALT BSLH          &kp Z            &kp X          &kp C         &kp V                  &kp B   &ht LC(LS(LALT)) LG(SPACE)       &ht LC(LS(LALT)) LC(LS(M))  &kp N           &kp M                 &kp COMMA      &kp DOT        &kp FSLH          &ht RALT RBKT
-			&mm_shift_caps_word_l  &lt_num_word     &lt NAV ESC    &ht LSHFT SPACE  &lt SYM TAB                                                  &lt SYM ENTER    &ht RSHFT BSPC  &lt NAV DEL  &lt_num_word   &kp RSHFT
+			&kp LALT               &kp Z            &kp X          &kp C         &kp V                  &kp B   &ht LC(LS(LALT)) LG(SPACE)       &ht LC(LS(LALT)) LC(LSHIFT) &kp N           &kp M                 &kp COMMA      &kp DOT        &kp FSLH          &ht RALT RBKT
+			&mm_shift_caps_word_l  &lt_num_word     &lt NAV ESC    &ht LSHFT SPACE  &lt SYM TAB                                                  &lt SYM ENTER    &ht RSHFT BSPC  &lt NAV DEL  &lt_num_word   &mm_shift_caps_word_r
 			>;
 			
 			// sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
@@ -188,7 +188,7 @@
 			&kp F1                &kp F2              &kp F3         &kp F4                &kp F5                &kp F6                                        &kp F7      &kp F8                   &kp F9               &kp F10            &kp F1             &kp F12
 			&kp LGUI              &kp PRINTSCREEN     &kp LA(LG(N5)) &kp LA(LG(N6))        &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &trans
 			&kp LCTRL             &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
-			&kp LALT              &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
+			&kp LALT              &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none       &ht LC(LS(LALT)) ESC     &trans   &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
 			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &tog NAV_LOCKED
 			>;
 			
