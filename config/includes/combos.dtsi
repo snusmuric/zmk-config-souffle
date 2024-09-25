@@ -154,7 +154,7 @@
 		};
 		
 		combo_toggle_num_layer {
-			bindings = <&tog NUM>;
+			bindings = <&mo NUM>;
 			key-positions = <RH1 RH2>;
 			timeout-ms = <COMBO_TERM_SLOW>;
 			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
