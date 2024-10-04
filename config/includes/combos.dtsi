@@ -1,6 +1,6 @@
 #define COMBO_TERM_FAST 35
 #define COMBO_TERM_SLOW 40
-#define COMBO_PRIOR_IDLE 100
+#define COMBO_PRIOR_IDLE 10
 
 / {
 	combos {
@@ -118,20 +118,6 @@
 		// 	require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
 		// };
 		
-		combo_equal_sign {
-			bindings = <&kp EQUAL>;
-			key-positions = <RN5 RT5>;
-			timeout-ms = <COMBO_TERM_FAST>;
-			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-		};
-		
-		combo_minus_sign {
-			bindings = <&kp MINUS>;
-			key-positions = <RM0 RB0>;
-			timeout-ms = <COMBO_TERM_FAST>;
-			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-		};
-		
 		combo_esc {
 			bindings = <&kp ESC>;
 			key-positions = <LN5 LT5>;
@@ -156,14 +142,21 @@
 		combo_toggle_funct_layer2 {
 			bindings = <&mo FUNCT>;
 			key-positions = <RH0 RH1>;
-			timeout-ms = <COMBO_TERM_SLOW>;
+			timeout-ms = <COMBO_TERM_FAST>;
 			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
 		};
 		
 		combo_toggle_num_layer {
 			bindings = <&mo NUM>;
 			key-positions = <RH1 RH2>;
-			timeout-ms = <COMBO_TERM_SLOW>;
+			timeout-ms = <COMBO_TERM_FAST>;
+			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+		};
+		
+		combo_enter {
+			bindings = <&kp ENTER>;
+			key-positions = <RM1 RM2>;
+			timeout-ms = <COMBO_TERM_FAST>;
 			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
 		};
 	};
