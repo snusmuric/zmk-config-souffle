@@ -1,5 +1,5 @@
 #define COMBO_TERM_FAST 35
-#define COMBO_TERM_SLOW 40
+#define COMBO_TERM_SLOW 50
 #define COMBO_PRIOR_IDLE 5
 
 / {
@@ -129,28 +129,24 @@
 			bindings = <&tog ADJUST>;
 			key-positions = <LH4 RH4>;
 			timeout-ms = <COMBO_TERM_SLOW>;
-			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
 		};
 		
 		combo_toggle_funct_layer {
 			bindings = <&tog FUNCT>;
 			key-positions = <LH0 RH0>;
 			timeout-ms = <COMBO_TERM_SLOW>;
-			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
 		};
 		
 		combo_toggle_funct_layer2 {
 			bindings = <&mo FUNCT>;
 			key-positions = <RH0 RH1>;
-			timeout-ms = <COMBO_TERM_FAST>;
-			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+			timeout-ms = <COMBO_TERM_SLOW>;
 		};
 		
 		combo_toggle_num_layer {
 			bindings = <&mo NUM>;
 			key-positions = <RH1 RH2>;
-			timeout-ms = <COMBO_TERM_FAST>;
-			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+			timeout-ms = <COMBO_TERM_SLOW>;
 		};
 		
 		combo_enter {
