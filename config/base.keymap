@@ -77,7 +77,7 @@
 			&ht LGUI GRAVE         &kp Q            &kp W          &kp E         &kp R                  &kp T                                                                &kp Y           &kp U                 &kp I          &kp O          &kp P             &ht RGUI LBKT
 			&kp LCTRL              &hm_l LCTRL A    &hm_l LALT S   &hm_l LGUI D  &hm_shift_l LSHFT F    &kp G                                                                &kp H           &hm_shift_r RSHFT J   &hm_r RGUI K   &hm_r RALT  L  &hm_r RCTRL SEMI  &ht RCTRL SQT
 			&kp LALT               &kp Z            &kp X          &kp C         &kp V                  &kp B   &ht LC(LS(LALT)) LG(SPACE)       &ht LC(LS(LALT)) LA(LSHIFT) &kp N           &kp M                 &kp COMMA      &kp DOT        &kp FSLH          &ht RALT RBKT
-			&mm_shift_caps_word_l  &kp LGUI         &lt NAV ESC    &ht LSHFT SPACE  &lt SYM TAB                                                  &lt SYM ENTER    &ht RSHFT BSPC  &lt NAV DEL  &lt_num_word   &mm_shift_caps_word_r
+			&mm_shift_caps_word_l  &mo FUNCT        &lt NAV ESC    &ht LSHFT SPACE  &lt SYM TAB                                                  &lt SYM ENTER    &ht RSHFT BSPC  &lt NUM DEL  &mo FUNCT	  &mm_shift_caps_word_r
 			>;
 			
 			// sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
