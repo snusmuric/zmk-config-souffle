@@ -1,6 +1,6 @@
 #define COMBO_TERM_FAST 35
 #define COMBO_TERM_SLOW 50
-#define COMBO_PRIOR_IDLE 5
+#define COMBO_PRIOR_IDLE 10
 
 / {
 	combos {
@@ -144,11 +144,11 @@
 			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
 		};
 		
-		combo_toggle_num_layer {
-			bindings = <&mo NUM>;
-			key-positions = <RH1 RH2>;
-			timeout-ms = <COMBO_TERM_SLOW>;
-		};
+		// combo_toggle_num_layer {
+		// 	bindings = <&mo NUM>;
+		// 	key-positions = <RH1 RH2>;
+		// 	timeout-ms = <COMBO_TERM_SLOW>;
+		// };
 		
 		combo_enter {
 			bindings = <&kp ENTER>;
@@ -160,6 +160,13 @@
 		combo_lang_switch {
 			bindings = <&kp LG(SPACE)>;
 			key-positions = <LM0 LB0>;
+			timeout-ms = <COMBO_TERM_FAST>;
+			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+		};
+		
+		combo_lang_switch_win {
+			bindings = <&kp LA(LSHIFT)>;
+			key-positions = <RM0 RB0>;
 			timeout-ms = <COMBO_TERM_FAST>;
 			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
 		};
