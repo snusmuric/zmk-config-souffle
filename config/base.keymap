@@ -7,19 +7,7 @@
 // Useful web keymap editor
 // https://nickcoutsos.github.io/keymap-editor/
 
-// Define layer numbers
-#define BASE 0
-#define NUM_WORD 1
-#define NUM 2
-#define NUM_LOCKED 3
-#define SYM_WORD 4
-#define SYM 5
-#define SYM_LOCKED 6
-#define NAV_WORD 7
-#define NAV 8
-#define NAV_LOCKED 9
-#define FUNCT 10
-#define ADJUST 11
+#include "includes/layers_definitions.dtsi"
 // #define MOUSE_KEYS 12
 // #define MOUSE_TP 13
 // #define MOUSE_TP_SET 14
@@ -47,6 +35,7 @@
 #include "includes/combos.dtsi"
 #include "includes/behaviours_homerow_mods.dtsi"
 #include "includes/behaviours_mod_morph.dtsi"
+#include "elpekenin/behaviors.dtsi"
 #include "includes/behaviours_other.dtsi"
 
 // Enable Mouse Keys
