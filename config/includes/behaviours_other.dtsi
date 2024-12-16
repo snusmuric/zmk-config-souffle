@@ -9,6 +9,12 @@
     flavor = "tap-preferred";
 };
 
+&caps_word {
+    continue-list = <
+        UNDERSCORE MINUS BACKSPACE DELETE RIGHT_SHIFT LEFT_SHIFT F17 F18
+    >;
+};
+
 &sl { release-after-ms = <5000>; };
 
 / {
