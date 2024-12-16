@@ -7,12 +7,12 @@
 		layer_on {
 			layer = <SYM>;
 			event = "on-activation";
-			bindings = <&kp F19>;
+			bindings = <&kp F17>;
 		};
 		layer_off {
 			layer = <SYM>;
 			event = "on-deactivation";
-			bindings = <&kp F20>;
+			bindings = <&kp F18>;
 		};
 	};
 };
