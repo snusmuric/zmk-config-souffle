@@ -9,5 +9,7 @@
 #define NAV_WORD 7
 #define NAV 8
 #define NAV_LOCKED 9
-#define FUNCT 10
-#define ADJUST 11
+#define NAV_LEFTHAND 10
+#define NAV_LEFTHAND_LOCKED 11
+#define FUNCT 12
+#define ADJUST 13
