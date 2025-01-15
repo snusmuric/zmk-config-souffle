@@ -66,7 +66,7 @@
 			&ht LGUI GRAVE         &kp Q            &kp W          &kp E         &kp R                  &kp T                                                                &kp Y           &kp U                 &kp I          &kp O          &kp P             &ht RGUI LBKT
 			&ltog LCTRL NUM        &hm_l LCTRL A    &hm_l LALT S   &hm_l LGUI D  &hm_shift_l LSHFT F    &kp G                                                                &kp H           &hm_shift_r RSHFT J   &hm_r RGUI K   &hm_r RALT  L  &hm_r RCTRL SEMI  &ht RCTRL SQT
 			&kp LALT               &kp Z            &kp X          &kp C         &kp V                  &kp B   &ht LC(LS(LALT)) LG(SPACE)       &ht LC(LS(LALT)) LA(LSHIFT) &kp N           &kp M                 &kp COMMA      &kp DOT        &kp FSLH          &ht RALT RBKT
-			&kt LSHFT  &mo FUNCT        &lt NAV_LEFTHAND ESC    &lt NUM SPACE  &lt SYM TAB                                                       &mo SYM  &lt NUM BSPC  &lt NAV DEL  &mo FUNCT	  &mm_shift_caps_word_r
+			&kt LSHFT  &mo FUNCT        &lt NAV_LEFTHAND ESC    &lt NUM SPACE  &lt SYM TAB                                                       &lt ENTER SYM  &lt NUM BSPC  &lt NAV DEL  &mo FUNCT	  &mm_shift_caps_word_r
 			>;
 			
 			// sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
@@ -122,7 +122,7 @@
 			&kp LGUI              &kp SQT                          &kp LESS_THAN         &kp GREATER_THAN        &kp DOUBLE_QUOTES       &kp DOT                      &kp AMPS   &kp SEMICOLON             &kp LEFT_BRACKET              &kp RIGHT_BRACKET               &kp PERCENT           &trans
 			&ltog LCTRL NUM       &hm_l LCTRL EXCLAMATION          &hm_l LGUI MINUS      &hm_shift_l LSHFT PLUS  &kp EQUAL               &kp HASH                     &kp PIPE   &hm_shift_r RSHFT COLON   &hm_r RGUI LEFT_PARENTHESIS   &hm_r RCTRL RIGHT_PARENTHESIS   &kp QUESTION          &kp COMMA
 			&ht LEFT_ALT EQUAL    &kp CARET                        &kp SLASH             &kp ASTERISK            &kp BACKSLASH           &kp GRAVE  &trans            &trans  &kp TILDE  &kp DOLLAR        &kp LEFT_BRACE                &kp RIGHT_BRACE                 &kp AT_SIGN           &trans
-			&trans   &trans  &to BASE  &trans  &trans                                                                                         &trans  &kp DEL  &trans  &trans  &to SYM_LOCKED
+			&trans   &trans  &to BASE  &trans  &trans                                                                                                                 &trans  &kp DEL  &trans  &trans  &to SYM_LOCKED
 			>;
 			
 			// sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
@@ -218,7 +218,7 @@
 			&kp LGUI              &kp PG_UP           &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L           &kp HOME                                      &kp HOME    &kp MY_LEFT_L            &none                &kp MY_RIGHT_L     &kp PG_UP          &trans
 			&ltog LCTRL NUM       &kp PG_DN           &kp LEFT                 &kp DOWN             &kp RIGHT                &kp END                                       &kp END     &kp RSHFT                &kp RGUI             &kp RALT           &kp RCTRL          &kp SCROLLLOCK
 			&kp LALT              &kp MY_UNDO         &kp MY_LEFT_W            &kp MY_COPY          &kp MY_RIGHT_W           &kp INSERT &ht LC(LS(LALT)) ESC      &trans   &kp INSERT  &none                    &none                &none              &none             &kp PAUSE_BREAK
-			&trans  &trans  &to BASE  &trans  &trans                                                                                                            &trans  &trans   &trans  &trans  &to BASE
+			&trans  &trans  &to BASE  &trans  &trans                                                                                                              &trans  &trans   &trans  &trans  &to BASE
 			>;
 			
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_BRI_INC C_BRI_DEC>;
@@ -227,11 +227,11 @@
 		Funct_layer {
 			display-name = "Fun";
 			bindings = <
-			&to BASE          &kp F16           &kp F17       &kp F18  &kp F19       &kp F20                                      &kp C_REWIND      &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD           &kp C_MUTE                    &none             &none
+			&to BASE          &kp F16           &kp F17       &kp F18  &kp F19       &kp F20                                      &kp C_REWIND      &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD           &kp C_MUTE                    &kp C_VOL_DN      &kp C_VOL_UP
 			&kp LGUI          &kp F15           &kp F7        &kp F8   &kp F9        &kp F12                                      &none             &none             &none                        &none                         &none             &kp RGUI
 			&ltog LCTRL NUM   &kp F14           &kp F4        &kp F5   &kp F6        &kp F11                                      &none             &kp RSHFT         &kp RGUI                     &kp RALT                      &kp RCTRL         &kp RCTRL
-			&kp LALT           &kp F13           &kp F1        &kp F2   &kp F3        &kp F10  &ht LC(LS(LALT)) ESC        &trans  &none             &none             &none                        &none                         &none             &kp RALT
-			&trans  &trans   &to BASE      &trans     &trans                                                 &trans  &trans  &trans  &trans  &trans
+			&kp LALT           &kp F13           &kp F1        &kp F2   &kp F3        &kp F10  &ht LC(LS(LALT)) ESC        &trans  &none            &none             &none                        &none                         &none             &kp RALT
+			&trans  &trans   &to BASE      &trans     &trans                                                               &trans  &trans  &trans  &trans  &trans
 			>;
 			
 			// sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
