@@ -202,9 +202,9 @@
 			display-name = "NavL";
 			bindings = <
 			&kp F1                &kp F2              &kp F3                   &kp F4               &kp F5                   &kp F6                                        &kp F7      &kp F8                   &kp F9               &kp F10            &kp F1             &kp F12
-			&kp LGUI              &kp PG_UP           &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L           &kp HOME                                      &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &trans
-			&ltog LCTRL NUM       &kp PG_DN           &kp LEFT                 &kp DOWN             &kp RIGHT                &kp END                                       &kp END     &kp RCTRL                &kp RALT             &kp RGUI           &kp RSHFT          &kp SCROLLLOCK
-			&kp LALT              &kp MY_UNDO         &kp MY_LEFT_W            &kp MY_COPY          &kp MY_RIGHT_W           &kp INSERT &ht LC(LS(LALT)) ESC      &trans   &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
+			&kp LGUI              &kp PG_UP           &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L           &kp HOME                                      &kp HOME    &kp MY_LEFT_L            &none                &kp MY_RIGHT_L     &kp PG_UP          &trans
+			&ltog LCTRL NUM       &kp PG_DN           &kp LEFT                 &kp DOWN             &kp RIGHT                &kp END                                       &kp END     &kp RSHFT                &kp RGUI             &kp RALT           &kp RCTRL          &kp SCROLLLOCK
+			&kp LALT              &kp MY_UNDO         &kp MY_LEFT_W            &kp MY_COPY          &kp MY_RIGHT_W           &kp INSERT &ht LC(LS(LALT)) ESC      &trans   &kp INSERT  &none                    &none                &none              &none             &kp PAUSE_BREAK
 			&tog NAV_LEFTHAND_LOCKED  &trans  &to BASE  &trans  &trans                                                                                            &trans  &trans   &trans  &trans  &tog NAV_LEFTHAND_LOCKED
 			>;
 			
@@ -215,9 +215,9 @@
 			display-name = "NavL";
 			bindings = <
 			&kp F1                &kp F2              &kp F3                   &kp F4               &kp F5                   &kp F6                                        &kp F7      &kp F8                   &kp F9               &kp F10            &kp F1             &kp F12
-			&kp LGUI              &kp PG_UP           &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L           &kp HOME                                      &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &trans
-			&ltog LCTRL NUM       &kp PG_DN           &kp LEFT                 &kp DOWN             &kp RIGHT                &kp END                                       &kp END     &kp RCTRL                &kp RALT             &kp RGUI           &kp RSHFT          &kp SCROLLLOCK
-			&kp LALT              &kp MY_UNDO         &kp MY_LEFT_W            &kp MY_COPY          &kp MY_RIGHT_W           &kp INSERT &ht LC(LS(LALT)) ESC      &trans   &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
+			&kp LGUI              &kp PG_UP           &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L           &kp HOME                                      &kp HOME    &kp MY_LEFT_L            &none                &kp MY_RIGHT_L     &kp PG_UP          &trans
+			&ltog LCTRL NUM       &kp PG_DN           &kp LEFT                 &kp DOWN             &kp RIGHT                &kp END                                       &kp END     &kp RSHFT                &kp RGUI             &kp RALT           &kp RCTRL          &kp SCROLLLOCK
+			&kp LALT              &kp MY_UNDO         &kp MY_LEFT_W            &kp MY_COPY          &kp MY_RIGHT_W           &kp INSERT &ht LC(LS(LALT)) ESC      &trans   &kp INSERT  &none                    &none                &none              &none             &kp PAUSE_BREAK
 			&to BASE  &trans  &to BASE  &trans  &trans                                                                                                            &trans  &trans   &trans  &trans  &to BASE
 			>;
 			
