@@ -125,6 +125,20 @@
 			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
 		};
 		
+		combo_esc2 {
+			bindings = <&kp ESC>;
+			key-positions = <LT4 LM4>;
+			timeout-ms = <COMBO_TERM_FAST>;
+			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+		};
+		
+		combo_del {
+			bindings = <&kp DEL>;
+			key-positions = <LH1 RH1>;
+			timeout-ms = <COMBO_TERM_FAST>;
+			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+		};
+		
 		combo_toggle_adjust_layer {
 			bindings = <&tog ADJUST>;
 			key-positions = <LH4 RH4>;
@@ -150,7 +164,14 @@
 		// 	timeout-ms = <COMBO_TERM_SLOW>;
 		// };
 		
-		combo_enter {
+		combo_enter_left {
+			bindings = <&kp ENTER>;
+			key-positions = <LM2 LM1>;
+			timeout-ms = <COMBO_TERM_FAST>;
+			require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+		};
+		
+		combo_enter_right {
 			bindings = <&kp ENTER>;
 			key-positions = <RM1 RM2>;
 			timeout-ms = <COMBO_TERM_FAST>;

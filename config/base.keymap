@@ -64,9 +64,9 @@
 			bindings = <
 			&kp F1                 &kp F2           &kp F3         &kp F4        &kp F5                 &kp F6                                                               &kp F7          &kp F8                &kp F9         &kp F10        &kp F11           &kp F12
 			&ht LGUI GRAVE         &kp Q            &kp W          &kp E         &kp R                  &kp T                                                                &kp Y           &kp U                 &kp I          &kp O          &kp P             &ht RGUI LBKT
-			&kp LCTRL              &hm_l LCTRL A    &hm_l LALT S   &hm_l LGUI D  &hm_shift_l LSHFT F    &kp G                                                                &kp H           &hm_shift_r RSHFT J   &hm_r RGUI K   &hm_r RALT  L  &hm_r RCTRL SEMI  &ht RCTRL SQT
+			&ltog LCTRL NUM        &hm_l LCTRL A    &hm_l LALT S   &hm_l LGUI D  &hm_shift_l LSHFT F    &kp G                                                                &kp H           &hm_shift_r RSHFT J   &hm_r RGUI K   &hm_r RALT  L  &hm_r RCTRL SEMI  &ht RCTRL SQT
 			&kp LALT               &kp Z            &kp X          &kp C         &kp V                  &kp B   &ht LC(LS(LALT)) LG(SPACE)       &ht LC(LS(LALT)) LA(LSHIFT) &kp N           &kp M                 &kp COMMA      &kp DOT        &kp FSLH          &ht RALT RBKT
-			&mm_shift_caps_word_l  &mo FUNCT        &lt NAV ESC    &ht LSHFT SPACE  &lt SYM TAB                                                  &lt SYM ENTER    &ht RSHFT BSPC  &lt NUM DEL  &mo FUNCT	  &mm_shift_caps_word_r
+			&mm_shift_caps_word_l  &mo FUNCT        &lt NAV ESC    &ht LSHFT SPACE  &lt SYM TAB                                                  &mo SYM  &ht RSHFT BSPC  &lt NUM DEL  &mo FUNCT	  &mm_shift_caps_word_r
 			>;
 			
 			// sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
@@ -120,7 +120,7 @@
 			bindings = <
 			&kp F1                &kp F2                           &kp F3                &kp F4                  &kp F5                  &kp F6                       &kp F7     &kp F8                    &kp F9                        &kp F10                         &kp F11               &kp F12
 			&kp LGUI              &kp SQT                          &kp LESS_THAN         &kp GREATER_THAN        &kp DOUBLE_QUOTES       &kp DOT                      &kp AMPS   &kp SEMICOLON             &kp LEFT_BRACKET              &kp RIGHT_BRACKET               &kp PERCENT           &trans
-			&kp LCTRL             &hm_l LCTRL EXCLAMATION          &hm_l LGUI MINUS      &hm_shift_l LSHFT PLUS  &kp EQUAL               &kp HASH                     &kp PIPE   &hm_shift_r RSHFT COLON   &hm_r RGUI LEFT_PARENTHESIS   &hm_r RCTRL RIGHT_PARENTHESIS   &kp QUESTION          &kp COMMA
+			&ltog LCTRL NUM       &hm_l LCTRL EXCLAMATION          &hm_l LGUI MINUS      &hm_shift_l LSHFT PLUS  &kp EQUAL               &kp HASH                     &kp PIPE   &hm_shift_r RSHFT COLON   &hm_r RGUI LEFT_PARENTHESIS   &hm_r RCTRL RIGHT_PARENTHESIS   &kp QUESTION          &kp COMMA
 			&ht LEFT_ALT EQUAL    &kp CARET                        &kp SLASH             &kp ASTERISK            &kp BACKSLASH           &kp GRAVE  &trans            &trans  &kp TILDE  &kp DOLLAR        &kp LEFT_BRACE                &kp RIGHT_BRACE                 &kp AT_SIGN           &trans
 			&trans   &trans  &to BASE  &trans  &trans                                                                                         &trans  &trans  &trans  &trans  &to SYM_LOCKED
 			>;
@@ -134,7 +134,7 @@
 			bindings = <
 			&kp F1              &kp F2                   &kp F3                &kp F4            &kp F5                  &kp F6                       &kp F7     &kp F8                   &kp F9                       &kp F10                       &kp F11               &kp F12
 			&kp LGUI            &kp SQT                  &kp LESS_THAN         &kp GREATER_THAN  &kp DOUBLE_QUOTES       &kp DOT                      &kp AMPS   &kp SEMICOLON            &kp LEFT_BRACKET             &kp RIGHT_BRACKET             &kp PERCENT           &trans
-			&kp LCTRL           &kp EXCLAMATION          &kp MINUS             &kp PLUS          &kp EQUAL               &kp HASH                     &kp PIPE   &kp COLON                &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS         &kp QUESTION          &kp COMMA
+			&ltog LCTRL NUM     &kp EXCLAMATION          &kp MINUS             &kp PLUS          &kp EQUAL               &kp HASH                     &kp PIPE   &kp COLON                &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS         &kp QUESTION          &kp COMMA
 			&ht LEFT_ALT EQUAL  &kp CARET                &kp SLASH             &kp ASTERISK      &kp BACKSLASH           &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
 			&trans   &trans  &to BASE  &trans  &trans                                                                                         &trans  &trans  &trans  &trans  &to SYM_LOCKED
 			>;
@@ -148,7 +148,7 @@
 			bindings = <
 			&kp F1              &kp F2                   &kp F3                &kp F4            &kp F5                  &kp F6                       &kp F7     &kp F8                   &kp F9                       &kp F10                       &kp F11               &kp F12
 			&kp LGUI            &kp SQT                  &kp LESS_THAN         &kp GREATER_THAN  &kp DOUBLE_QUOTES       &kp DOT                      &kp AMPS   &kp SEMICOLON            &kp LEFT_BRACKET             &kp RIGHT_BRACKET             &kp PERCENT           &trans
-			&kp LCTRL           &kp EXCLAMATION          &kp MINUS             &kp PLUS          &kp EQUAL               &kp HASH                     &kp PIPE   &kp COLON                &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS         &kp QUESTION          &kp COMMA
+			&ltog LCTRL NUM     &kp EXCLAMATION          &kp MINUS             &kp PLUS          &kp EQUAL               &kp HASH                     &kp PIPE   &kp COLON                &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS         &kp QUESTION          &kp COMMA
 			&ht LEFT_ALT EQUAL  &kp CARET                &kp SLASH             &kp ASTERISK      &kp BACKSLASH           &kp GRAVE  &trans    &trans  &kp TILDE  &kp DOLLAR               &kp LEFT_BRACE               &kp RIGHT_BRACE               &kp AT_SIGN           &trans
 			&trans   &trans  &to BASE  &trans  &trans                                                                                         &trans  &trans  &trans  &trans  &to SYM_LOCKED
 			>;
@@ -162,7 +162,7 @@
 			bindings = <
 			&kp F1                 &kp F2              &kp F3         &kp F4                &kp F5                &kp F6                                        &kp F7      &kp F8                   &kp F9               &kp F10            &kp F1             &kp F12
 			&kp LGUI               &kp PRINTSCREEN     &kp LA(LG(N5)) &kp LA(LG(N6))        &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &trans
-			&kp LCTRL              &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
+			&ltog LCTRL NUM        &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
 			&kp LEFT_ALT           &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
 			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &to NAV_LOCKED
 			>;
@@ -176,7 +176,7 @@
 			bindings = <
 			&kp F1                &kp F2              &kp F3         &kp F4                &kp F5                &kp F6                                        &kp F7      &kp F8                   &kp F9               &kp F10            &kp F1             &kp F12
 			&kp LGUI              &kp PRINTSCREEN     &kp LA(LG(N5)) &kp LA(LG(N6))        &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &trans
-			&kp LCTRL             &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
+			&ltog LCTRL NUM       &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
 			&kp LALT              &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none       &ht LC(LS(LALT)) ESC     &trans   &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
 			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans  &tog NAV_LOCKED
 			>;
@@ -189,7 +189,7 @@
 			bindings = <
 			&kp F1                &kp F2              &kp F3         &kp F4                &kp F5                &kp F6                                        &kp F7      &kp F8                   &kp F9               &kp F10            &kp F1             &kp F12
 			&kp LGUI              &kp PRINTSCREEN     &none          &none                 &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &trans
-			&kp LCTRL             &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
+			&ltog LCTRL NUM       &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
 			&kp LALT              &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none      &ht LC(LS(LALT)) ESC       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
 			&trans  &trans  &to BASE  &trans  &trans                                                                         &trans  &trans   &trans  &trans   &to BASE
 			>;
@@ -201,11 +201,11 @@
 		Funct_layer {
 			display-name = "Fun";
 			bindings = <
-			&to BASE    &kp F16           &kp F17       &kp F18  &kp F19       &kp F20                                      &kp C_REWIND      &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD           &kp C_MUTE                    &none             &none
-			&kp LGUI    &kp F15           &kp F7        &kp F8   &kp F9        &kp F12                                      &none             &none             &none                        &none                         &none             &kp RGUI
-			&kp LALT    &kp F14           &kp F4        &kp F5   &kp F6        &kp F11                                      &none             &kp RSHFT         &kp RGUI                     &kp RALT                      &kp RCTRL         &kp RCTRL
-			&kp LCTRL   &kp F13           &kp F1        &kp F2   &kp F3        &kp F10  &ht LC(LS(LALT)) ESC        &trans  &none             &none             &none                        &none                         &none             &kp RALT
-			&trans        &trans   &to BASE      &trans     &trans                                                 &trans  &trans  &trans  &trans  &trans
+			&to BASE          &kp F16           &kp F17       &kp F18  &kp F19       &kp F20                                      &kp C_REWIND      &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD           &kp C_MUTE                    &none             &none
+			&kp LGUI          &kp F15           &kp F7        &kp F8   &kp F9        &kp F12                                      &none             &none             &none                        &none                         &none             &kp RGUI
+			&ltog LCTRL NUM   &kp F14           &kp F4        &kp F5   &kp F6        &kp F11                                      &none             &kp RSHFT         &kp RGUI                     &kp RALT                      &kp RCTRL         &kp RCTRL
+			&kp LALT           &kp F13           &kp F1        &kp F2   &kp F3        &kp F10  &ht LC(LS(LALT)) ESC        &trans  &none             &none             &none                        &none                         &none             &kp RALT
+			&trans  &trans   &to BASE      &trans     &trans                                                 &trans  &trans  &trans  &trans  &trans
 			>;
 			
 			// sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
