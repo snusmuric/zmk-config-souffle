@@ -66,7 +66,7 @@
 			&ht LGUI GRAVE         &kp Q            &kp W          &kp E         &kp R                  &kp T                                                                &kp Y           &kp U                 &kp I          &kp O          &kp P             &ht RGUI LBKT
 			&ltog LCTRL NUM        &hm_l LCTRL A    &hm_l LALT S   &hm_l LGUI D  &hm_shift_l LSHFT F    &kp G                                                                &kp H           &hm_shift_r RSHFT J   &hm_r RGUI K   &hm_r RALT  L  &hm_r RCTRL SEMI  &ht RCTRL SQT
 			&kp LALT               &kp Z            &kp X          &kp C         &kp V                  &kp B   &ht LC(LS(LALT)) LG(SPACE)       &ht LC(LS(LALT)) LA(LSHIFT) &kp N           &kp M                 &kp COMMA      &kp DOT        &kp FSLH          &ht RALT RBKT
-			&mm_shift_caps_word_l  &mo FUNCT        &lt NAV_LEFTHAND ESC    &lt NUM SPACE  &lt SYM TAB                                           &mo SYM  &lt NUM BSPC  &lt NAV DEL  &mo FUNCT	  &mm_shift_caps_word_r
+			&kt LSHFT  &mo FUNCT        &lt NAV_LEFTHAND ESC    &lt NUM SPACE  &lt SYM TAB                                                       &mo SYM  &lt NUM BSPC  &lt NAV DEL  &mo FUNCT	  &mm_shift_caps_word_r
 			>;
 			
 			// sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
@@ -205,7 +205,7 @@
 			&kp LGUI              &kp PG_UP           &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L           &kp HOME                                      &kp HOME    &kp MY_LEFT_L            &none                &kp MY_RIGHT_L     &kp PG_UP          &trans
 			&ltog LCTRL NUM       &kp PG_DN           &kp LEFT                 &kp DOWN             &kp RIGHT                &kp END                                       &kp END     &kp RSHFT                &kp RGUI             &kp RALT           &kp RCTRL          &kp SCROLLLOCK
 			&kp LALT              &kp MY_UNDO         &kp MY_LEFT_W            &kp MY_COPY          &kp MY_RIGHT_W           &kp INSERT &ht LC(LS(LALT)) ESC      &trans   &kp INSERT  &none                    &none                &none              &none             &kp PAUSE_BREAK
-			&tog NAV_LEFTHAND_LOCKED  &trans  &to BASE  &trans  &trans                                                                                            &trans  &trans   &trans  &trans  &tog NAV_LEFTHAND_LOCKED
+			&trans  &trans  &to BASE  &trans  &trans                                                                                                              &trans  &trans   &trans  &trans  &tog NAV_LEFTHAND_LOCKED
 			>;
 			
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_BRI_INC C_BRI_DEC>;
@@ -218,7 +218,7 @@
 			&kp LGUI              &kp PG_UP           &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L           &kp HOME                                      &kp HOME    &kp MY_LEFT_L            &none                &kp MY_RIGHT_L     &kp PG_UP          &trans
 			&ltog LCTRL NUM       &kp PG_DN           &kp LEFT                 &kp DOWN             &kp RIGHT                &kp END                                       &kp END     &kp RSHFT                &kp RGUI             &kp RALT           &kp RCTRL          &kp SCROLLLOCK
 			&kp LALT              &kp MY_UNDO         &kp MY_LEFT_W            &kp MY_COPY          &kp MY_RIGHT_W           &kp INSERT &ht LC(LS(LALT)) ESC      &trans   &kp INSERT  &none                    &none                &none              &none             &kp PAUSE_BREAK
-			&to BASE  &trans  &to BASE  &trans  &trans                                                                                                            &trans  &trans   &trans  &trans  &to BASE
+			&trans  &trans  &to BASE  &trans  &trans                                                                                                            &trans  &trans   &trans  &trans  &to BASE
 			>;
 			
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_BRI_INC C_BRI_DEC>;
