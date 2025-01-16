@@ -158,7 +158,7 @@
             nav_word: nav_word {
                 compatible = "zmk,behavior-caps-word";
                 #binding-cells = <0>;
-                layers = <NAV_WORD>;
+                // layers = <NAV_WORD>;
                 continue-list = <
                     LEFT DOWN UP RIGHT
                     MY_RIGHT_L MY_RIGHT_W
@@ -169,7 +169,7 @@
                     INSERT DEL
                     F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12
                 >;
-                ignore-modifiers;  // modifiers don't deactivate the layer
+                // ignore-modifiers;  // modifiers don't deactivate the layer
             };
         #else
             nav_word: nav_word {
@@ -182,7 +182,7 @@
             sym_word: sym_word {
                 compatible = "zmk,behavior-caps-word";
                 #binding-cells = <0>;
-                layers = <SYM_WORD>;
+                // layers = <SYM_WORD>;
                 continue-list = <
                     CARET AMPERSAND PLUS EQUAL MINUS SLASH PIPE
                     TILDE PERCENT UNDERSCORE EXCLAMATION DOLLAR SEMICOLON
@@ -190,7 +190,7 @@
                     RPAR LPAR RBKT LBKT RBRC LBRC GT LT
                     BACKSPACE DOT DOUBLE_QUOTES SQT
                 >;
-                ignore-modifiers;  // modifiers don't deactivate the layer
+                // ignore-modifiers;  // modifiers don't deactivate the layer
             };
         #else
             sym_word: sym_word {
@@ -237,14 +237,14 @@
             my_num_word: my_num_word {
                 compatible = "zmk,behavior-caps-word";
                 #binding-cells = <0>;
-                layers = <NUM_WORD>;
+                // layers = <NUM_WORD>;
                 continue-list = <
                     BACKSPACE DELETE DOT COMMA
                     SLASH ASTERISK KP_ASTERISK PLUS MINUS EQUAL DOLLAR DOT
                     RS(SPACE)
                     N0 N1 N2 N3 N4 N5 N6 N7 N8 N9
                 >;
-                ignore-modifiers;  // modifiers don't deactivate the layer
+                // ignore-modifiers;  // modifiers don't deactivate the layer
             };
         #else
             my_num_word: my_num_word {
