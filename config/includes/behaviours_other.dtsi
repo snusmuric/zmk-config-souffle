@@ -42,6 +42,16 @@
             flavor = "tap-preferred";
         };
 
+        ht_tog_layer: ht_tog_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TOG_LAYER_HOLD_KEY";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <0>;         // Disable quick tap
+            flavor = "hold-preferred";  // Hold takes precedence if held past tapping-term-ms
+            bindings = <&kp>, <&tog>;   // Hold: key, Tap: toggle layer
+        };
+
         /*
          * Auto Mod
          *
@@ -69,6 +79,17 @@
         #define AM(hold_keycode, tap_keycode) &am hold_keycode tap_keycode
         #define AS(keycode) &am LS(keycode) keycode
 
+        /*layer_word: layer_word {
+            compatible = "zmk,behavior-caps-word";
+            label = "LAYER_WORD";
+            #binding-cells = <0>;
+            continue-list = <
+                N0 N1 N2 N3 N4 N5 N6 N7 N8 N9
+                BACKSPACE DELETE DOT COMMA
+                SLASH ASTERISK PLUS MINUS EQUAL
+            >;
+            layers = <NUM_WORD>;
+        };*/
 
         /*
         * Tap dancing shift
@@ -232,7 +253,7 @@
         #endif
 
 
-        lt_num_word: lt_num_word {
+        /*lt_num_word: lt_num_word {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
@@ -242,7 +263,7 @@
             #else
                 bindings = <&mo NUM>, <&tog NUM>;
             #endif
-        };
+        };*/
 
 
         /**
@@ -252,13 +273,13 @@
          * Tap: Number word layer
          * Hold: <keycode>
          */
-        ht_num_word: ht_num_word {
+        /*ht_num_word: ht_num_word {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&my_num_word>;
-        };
+            bindings = <&kp>, <&layer_word>; // Hold = key, Tap = layer_word
+        };*/
 
         #ifdef HAS_UROB
             my_num_word: my_num_word {
