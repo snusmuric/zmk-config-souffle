@@ -11,7 +11,18 @@
 
 &caps_word {
     continue-list = <
-        UNDERSCORE MINUS BACKSPACE DELETE RIGHT_SHIFT LEFT_SHIFT F17 F18
+        UNDERSCORE
+        MINUS
+        BACKSPACE
+        DELETE
+        LEFT
+        RIGHT
+        UP
+        DOWN
+        RIGHT_SHIFT
+        LEFT_SHIFT
+        F17
+        F18
     >;
 };
 
