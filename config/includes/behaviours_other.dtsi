@@ -244,12 +244,20 @@
             #endif
         };
 
-        lt_meh_num_word: lt_meh_num_word {
+
+        /**
+         * Hold-Tap behavior for number word.
+         *
+         * Usage: &ht_num_word <keycode>
+         * Tap: Number word layer
+         * Hold: <keycode>
+         */
+        ht_num_word: ht_num_word {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
-            bindings = <&kp MY_MEH>, <&my_num_word>;
+            bindings = <&kp>, <&my_num_word>;
         };
 
         #ifdef HAS_UROB
