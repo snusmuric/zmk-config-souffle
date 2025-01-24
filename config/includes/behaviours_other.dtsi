@@ -248,7 +248,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <250>;
-            bindings = <&kp MY_MEH>, <&my_num_word>;
+            bindings = <&kp MY_MEH>, <&kp my_num_word>;
         };
 
         #ifdef HAS_UROB
