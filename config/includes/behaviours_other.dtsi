@@ -246,9 +246,10 @@
 
         lt_meh_num_word: lt_meh_num_word {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp MY_MEH>, <&kp my_num_word>;
+            flavor = "tap-preferred";
+            bindings = <&kp MY_MEH>, <&my_num_word>;
         };
 
         #ifdef HAS_UROB
