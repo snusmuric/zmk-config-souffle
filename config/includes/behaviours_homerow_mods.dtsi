@@ -98,7 +98,7 @@
             quick-tap-ms = <160>;
         };
 
-        //
+        // left hrm for nav layer that produced either pgdn or A
         hm_l_a_pgdn: hm_l_a_pgdn {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -111,6 +111,6 @@
 
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;
-        }
+        };
     };
 };
