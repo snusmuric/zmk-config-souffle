@@ -151,6 +151,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        // Custom Mod-Morph: Send A if RCTRL/RGUI is active, else PG_DN
+        mm_pgdn_a: mm_pgdn_a {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PG_DN>, <&kp A>;  // Base: PG_DN, Morphed: A
+            mods = <(MOD_RCTRL|MOD_RGUI)>;    // Trigger if RCTRL/RGUI is held
+        };
+
 
         /*********************************
         * Shortcuts on left layer - NAV *

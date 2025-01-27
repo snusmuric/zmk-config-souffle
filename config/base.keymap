@@ -174,11 +174,11 @@
 		nav_layer_righthand {
 			display-name = "NavR";
 			bindings = <
-			&kp F1                &kp F2              &kp F3            &kp F4                &kp F5                &kp F6                                     &kp F7      &kp F8                   &kp F9               &kp F10            &kp F1             &kp F12
-			&kp LGUI              &kp PG_UP           &none             &kp UP                &kp MY_REDO           &kp HOME                                   &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &trans
-			&trans                &hm_l LCTRL PG_DN   &hm_l LALT LEFT   &hm_l LGUI DOWN       &hm_l LSHFT RIGHT     &kp END                                    &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
-			&kp LALT              &kp MY_UNDO         &kp MY_CUT        &kp MY_COPY           &kp MY_PASTE          &none    &trans                    &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
-			&trans  &trans  &to BASE  &trans  &trans                                                                                                   &trans  &trans   &trans  &trans  &tog NAV_LOCKED
+			&kp F1                &kp F2                  &kp F3            &kp F4                &kp F5                &kp F6                                     &kp F7      &kp F8                   &kp F9               &kp F10            &kp F1             &kp F12
+			&kp LGUI              &kp PG_UP               &trans            &kp UP                &kp MY_REDO           &kp HOME                                   &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &trans
+			&trans                &hm_l LCTRL mm_pgdn_a   &hm_l LALT LEFT   &hm_l LGUI DOWN       &hm_l LSHFT RIGHT     &kp END                                    &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
+			&kp LALT              &kp MY_UNDO             &kp MY_CUT        &kp MY_COPY           &kp MY_PASTE          &none    &trans                    &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
+			&trans  &trans  &to BASE  &trans  &trans                                                                                                       &trans  &trans   &trans  &trans  &tog NAV_LOCKED
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_BRI_INC C_BRI_DEC>;
@@ -205,7 +205,7 @@
 			&kp LGUI              &kp PG_UP           &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L           &kp HOME                                      &kp HOME    &kp MY_LEFT_L            &none                &kp MY_RIGHT_L     &kp PG_UP          &trans
 			&trans                &kp PG_DN           &kp LEFT                 &kp DOWN             &kp RIGHT                &kp END                                       &kp END     &kp RSHFT                &kp RGUI             &kp RALT           &kp RCTRL          &kp SCROLLLOCK
 			&kp LALT              &kp MY_UNDO         &kp MY_LEFT_W            &kp MY_COPY          &kp MY_RIGHT_W           &kp INSERT &trans                    &trans   &kp INSERT  &none                    &none                &none              &none             &kp PAUSE_BREAK
-			&trans  &trans  &to BASE  &trans  &trans                                                                                                              &trans   &trans   &trans  &trans  &tog NAV_LEFTHAND_LOCKED
+			&trans  &trans  &to BASE  &trans  &trans                                                                                                              &trans   &trans   &trans  &trans  &tog NAV_LOCKED
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_BRI_INC C_BRI_DEC>;
