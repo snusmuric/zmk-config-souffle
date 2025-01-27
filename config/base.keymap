@@ -162,8 +162,8 @@
 			bindings = <
 			&kp F1               &kp F2              &kp F3         &kp F4                &kp F5                &kp F6                                        &kp F7      &kp F8                   &kp F9               &kp F10            &kp F1             &kp F12
 			&trans               &none               &none          &none                 &kp MY_REDO           &none                                         &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &trans
-			&trans               &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
-			&kp LEFT_ALT         &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none    &trans                       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
+			&trans               &kp LCTRL           &kp LALT       &kp LGUI              &kp LSHFT             &none                                         &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &trans
+			&kp LEFT_ALT         &kp MY_UNDO         &kp MY_CUT     &kp MY_COPY           &kp MY_PASTE          &none    &trans                       &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &trans
 			&trans  &trans  &to BASE  &trans  &trans                                                                                                  &trans  &trans   &trans  &trans  &to NAV_LOCKED
 			>;
 
@@ -176,8 +176,8 @@
 			bindings = <
 			&kp F1                &kp F2                  &kp F3            &kp F4                &kp F5                &kp F6                                     &kp F7      &kp F8                   &kp F9               &kp F10            &kp F1             &kp F12
 			&kp LGUI              &kp PG_UP               &trans            &kp UP                &kp MY_REDO           &kp HOME                                   &kp HOME    &kp MY_LEFT_L            &kp UP               &kp MY_RIGHT_L     &kp PG_UP          &trans
-			&trans                &hm_l_a_pgdn LCTRL 0    &hm_l LALT LEFT   &hm_l LGUI DOWN       &hm_l LSHFT RIGHT     &kp END                                    &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &kp SCROLLLOCK
-			&kp LALT              &kp MY_UNDO             &kp MY_CUT        &kp MY_COPY           &kp MY_PASTE          &none    &trans                    &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &kp PAUSE_BREAK
+			&trans                &hm_l_a_pgdn LCTRL 0    &hm_l LALT LEFT   &hm_l LGUI DOWN       &hm_l LSHFT RIGHT     &kp END                                    &kp END     &kp LEFT                 &kp DOWN             &kp RIGHT          &kp PG_DN          &trans
+			&kp LALT              &kp MY_UNDO             &kp MY_CUT        &kp MY_COPY           &kp MY_PASTE          &none    &trans                    &trans  &kp INSERT  &kp MY_LEFT_W            &none                &kp MY_RIGHT_W     &kp DEL            &trans
 			&trans  &trans  &to BASE  &trans  &trans                                                                                                       &trans  &trans   &trans  &trans  &tog NAV_LOCKED
 			>;
 
