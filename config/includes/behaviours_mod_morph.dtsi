@@ -155,8 +155,9 @@
         mm_pgdn_a: mm_pgdn_a {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp PG_DN>, <&kp LGUI(A)>;  // Base: PG_DN, Morphed: A
-            mods = <(MOD_RCTL|MOD_RGUI)>;    // Trigger if RCTRL/RGUI is held
+            bindings = <&kp PG_DN>, <&kp A>;
+            mods = <(MOD_RGUI|MOD_RCTL)>;     // Check for either RGUI or RCTL
+            keep-mods = <(MOD_RGUI|MOD_RCTL)>; // Keep whichever modifier was used
         };
 
 
