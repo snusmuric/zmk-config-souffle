@@ -87,14 +87,14 @@
             timeout-ms = <COMBO_TERM_FAST>;
         };
 
-        combo_mo_num_layer_right {
-            bindings = <&mo NUM>;
+        combo_tog_num_layer_right {
+            bindings = <&tog NUM>;
             key-positions = <RB0 RH1>;
             timeout-ms = <COMBO_TERM_FAST>;
         };
 
-        combo_mo_nav_layer_right {
-            bindings = <&mo NAV>;
+        combo_tog_nav_layer_right {
+            bindings = <&tog NAV>;
             key-positions = <RB1 RH2>;
             timeout-ms = <COMBO_TERM_FAST>;
         };
