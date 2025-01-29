@@ -133,12 +133,12 @@
             require-prior-idle-ms = <COMBO_PRIOR_IDLE_SLOW>;
         };
 
-        combo_lang_switch {
+        /*combo_lang_switch {
             bindings = <&kp LG(SPACE)>;
             key-positions = <LM0 LB0>;
             timeout-ms = <COMBO_TERM_FAST>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE_FAST>;
-        };
+        };*/
 
         combo_lang_switch_win {
             bindings = <&kp LA(LSHIFT)>;
