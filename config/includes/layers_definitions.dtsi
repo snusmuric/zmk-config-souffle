@@ -12,4 +12,6 @@
 #define NAV_LEFTHAND 10
 #define NAV_LEFTHAND_LOCKED 11
 #define FUNCT 12
-#define ADJUST 13
+#define FUNCT_LOCKED 13
+#define ADJUST 14
+#define ADJUST_LOCKED 15
