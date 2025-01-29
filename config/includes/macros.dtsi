@@ -12,6 +12,7 @@ macros {
                 , <&macro_wait_time 50>          // Wait for releases to process
                 , <&macro_param_1to1>           // Load parameter
                 , <&tog MACRO_PLACEHOLDER>      // Toggle target layer
+                ;
         };
     };
 };
