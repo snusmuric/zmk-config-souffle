@@ -365,5 +365,22 @@
 
             bindings = <&mo>, <&kp>;
         };
+
+        // Hold - shift,
+        // tap - Backspace,
+        // Shifted Backspace - delete
+        ht_shift_bksp_del: ht_shift_bksp_del {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&kp>,  <&mm_bksp_del_shifted>;
+
+            flavor = "balanced";
+            tapping-term-ms = <HM_TAPPING_TERM>;
+            quick-tap-ms = <175>;// repeat on tap-into-hold
+            require-prior-idle-ms = <HM_PRIOR_IDLE>;
+
+            hold-trigger-key-positions = <KEYS_R KEYS_T>;
+            hold-trigger-on-release;
+        };
     };
 };

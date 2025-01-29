@@ -51,12 +51,12 @@
         * Tap: Backspace
         * Shift-Tap: Delete
         */
-        // mm_bspc_del: bspc_del {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp BSPC>, <&kp DEL>;
-        //     mods = <(MOD_LSFT|MOD_RSFT)>;
-        // };
+        mm_bksp_del_shifted: mm_bksp_del_shifted {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp DEL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
         /*
         * Shifted Backspace deletes + Layer Tap
