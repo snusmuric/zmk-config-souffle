@@ -1,16 +1,15 @@
 #include "layers_definitions.dtsi"
 
 / {
-    macros {
-
-     layer_switch_macro: layer_switch_macro {
-         compatible = "zmk,behavior-macro-one-param";
-         #binding-cells = <1>;
-         bindings
+macros {
+        layer_switch_macro: layer_switch_macro {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings
              = <&to BASE>
              , <&macro_param_1to1>
-             , <&tog LAYER>     // Then switch to the specified layer
+             , <&tog PARAM1>
              ;
-     };
+        };
     };
 };
