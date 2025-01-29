@@ -1,6 +1,7 @@
 #include "layers_definitions.dtsi"
 #include "elpekenin/behaviors.dtsi"
 
+/*
 / {
 	layer_callbacks {
 		compatible = "elpekenin,layer-callback";
@@ -16,3 +17,4 @@
 		};
 	};
 };
+*/
