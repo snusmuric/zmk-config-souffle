@@ -8,7 +8,7 @@ macros {
             bindings
              = <&to BASE>
              , <&macro_param_1to1>
-             , <&macro_tap <&to MACRO_PLACEHOLDER>
+             , <&to MACRO_PLACEHOLDER>
              ;
         };
     };
