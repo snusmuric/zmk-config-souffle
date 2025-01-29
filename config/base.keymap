@@ -258,24 +258,12 @@
             &to BASE     &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                                    &trans  &trans  &trans  &trans  &trans  &trans
             &trans       &bt BT_DISC 0    &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                                   &none   &none   &none   &none   &none   &none
             &trans       &bt BT_CLR_ALL   &none          &none          &none          &none                                           &none   &none   &none   &none   &none   &trans
-            &trans       &none            &none          &bt BT_CLR     &none          &trans    &to ADJUST_LOCKED              &none  &none   &none   &none   &none   &none   &trans
+            &trans       &none            &none          &bt BT_CLR     &none          &trans    &to BASE                       &none  &none   &none   &none   &none   &none   &trans
             &trans  &trans  &to BASE    &trans  &trans                                                                          &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_BRI_INC C_BRI_DEC>;
         };
 
-         adjust_layer_locked {
-                    display-name = "Adj";
-                    bindings = <
-                    &to BASE     &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                                    &trans  &trans  &trans  &trans  &trans  &trans
-                    &trans       &bt BT_DISC 0    &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                                   &none   &none   &none   &none   &none   &none
-                    &trans       &bt BT_CLR_ALL   &none          &none          &none          &none                                           &none   &none   &none   &none   &none   &trans
-                    &trans       &none            &none          &bt BT_CLR     &none          &trans    &to BASE     &none  &none   &none   &none   &none   &none   &trans
-                    &trans  &trans  &to BASE    &trans  &trans                                                                          &trans  &trans  &trans  &trans  &trans
-                    >;
-
-                    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_BRI_INC C_BRI_DEC>;
-        };
     };
 };
